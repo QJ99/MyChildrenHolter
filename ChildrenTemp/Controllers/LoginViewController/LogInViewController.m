@@ -7,23 +7,35 @@
 //
 
 #import "LogInViewController.h"
-
+#import "RegisterViewController.h"
 @interface LogInViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *loginButton;
 @property (weak, nonatomic) IBOutlet UITextField *userNameTextfield;
 @property (weak, nonatomic) IBOutlet UITextField *passWordTextfield;
+@property (weak, nonatomic) IBOutlet UIButton *registerButton;
 @end
 
 @implementation LogInViewController
+- (IBAction)exitedFeild:(UITextField *)sender {
+}
+- (IBAction)tapBgView:(UITapGestureRecognizer *)sender {
+    [_passWordTextfield  resignFirstResponder];
+    [_userNameTextfield resignFirstResponder];
+}
+- (IBAction)registerButtonClick:(UIButton *)sender {
+    RegisterViewController *regisetVC = [[RegisterViewController alloc]init];
+    [self.navigationController pushViewController:regisetVC animated:YES];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    [[UITextField appearance] setTintColor:[UIColor whiteColor]];
+    [_registerButton.imageView setContentMode:UIViewContentModeScaleAspectFit];
+    [_registerButton setBackgroundImage:[UIImage imageNamed:@"login_register.png"] forState:UIControlStateNormal];
     [_loginButton setBackgroundColor: kcolorWithRGB(255,131,85)];
     _loginButton.layer.cornerRadius = 15.0;
     _loginButton.layer.masksToBounds = YES;
-    [_loginButton setTitle:@"登  陆" forState:UIControlStateNormal];
+    [_loginButton setTitle:@"登 录" forState:UIControlStateNormal];
     [_loginButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
 }
 
