@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		93D636281ABA77CE007CFDE1 /* MJConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D6361A1ABA77CE007CFDE1 /* MJConst.m */; };
+		93D636291ABA77CE007CFDE1 /* MJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D6361D1ABA77CE007CFDE1 /* MJFoundation.m */; };
+		93D6362A1ABA77CE007CFDE1 /* MJIvar.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D6361F1ABA77CE007CFDE1 /* MJIvar.m */; };
+		93D6362B1ABA77CE007CFDE1 /* MJType.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D636211ABA77CE007CFDE1 /* MJType.m */; };
+		93D6362C1ABA77CE007CFDE1 /* NSObject+MJCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D636231ABA77CE007CFDE1 /* NSObject+MJCoding.m */; };
+		93D6362D1ABA77CE007CFDE1 /* NSObject+MJIvar.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D636251ABA77CE007CFDE1 /* NSObject+MJIvar.m */; };
+		93D6362E1ABA77CE007CFDE1 /* NSObject+MJKeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D636271ABA77CE007CFDE1 /* NSObject+MJKeyValue.m */; };
+		93D636321ABA9A9C007CFDE1 /* InforModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D636311ABA9A9C007CFDE1 /* InforModel.m */; };
+		93D636381ABA9BB0007CFDE1 /* LogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D636351ABA9BB0007CFDE1 /* LogInViewController.m */; };
+		93D636391ABA9BB0007CFDE1 /* LogInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93D636361ABA9BB0007CFDE1 /* LogInViewController.xib */; };
+		93D6363F1ABA9E8E007CFDE1 /* LoginInfor.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D6363E1ABA9E8E007CFDE1 /* LoginInfor.m */; };
+		93D636451ABAA7E9007CFDE1 /* LoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D636441ABAA7E9007CFDE1 /* LoginModel.m */; };
 		93D69F4B1AA55AC0006938FE /* ChildHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D69F4A1AA55AC0006938FE /* ChildHTTPSessionManager.m */; };
 		93D69F521AA5621D006938FE /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D69F511AA5621D006938FE /* BaseModel.m */; };
 		93D69F551AA56249006938FE /* StatusInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D69F541AA56249006938FE /* StatusInfoModel.m */; };
@@ -43,8 +55,6 @@
 		93E12FFC1A79FDF3002DEF43 /* MyNavgationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E12FFB1A79FDF3002DEF43 /* MyNavgationViewController.m */; };
 		93E130001A79FE2B002DEF43 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E12FFE1A79FE2B002DEF43 /* HomeViewController.m */; };
 		93E130011A79FE2B002DEF43 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93E12FFF1A79FE2B002DEF43 /* HomeViewController.xib */; };
-		93E130071A7A09B3002DEF43 /* LogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E130051A7A09B3002DEF43 /* LogInViewController.m */; };
-		93E130081A7A09B3002DEF43 /* LogInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93E130061A7A09B3002DEF43 /* LogInViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +70,30 @@
 /* Begin PBXFileReference section */
 		93678FFC1A7F228600AF134C /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		936790011A7F263500AF134C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		93D636191ABA77CE007CFDE1 /* MJConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJConst.h; sourceTree = "<group>"; };
+		93D6361A1ABA77CE007CFDE1 /* MJConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJConst.m; sourceTree = "<group>"; };
+		93D6361B1ABA77CE007CFDE1 /* MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtension.h; sourceTree = "<group>"; };
+		93D6361C1ABA77CE007CFDE1 /* MJFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJFoundation.h; sourceTree = "<group>"; };
+		93D6361D1ABA77CE007CFDE1 /* MJFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJFoundation.m; sourceTree = "<group>"; };
+		93D6361E1ABA77CE007CFDE1 /* MJIvar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJIvar.h; sourceTree = "<group>"; };
+		93D6361F1ABA77CE007CFDE1 /* MJIvar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJIvar.m; sourceTree = "<group>"; };
+		93D636201ABA77CE007CFDE1 /* MJType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJType.h; sourceTree = "<group>"; };
+		93D636211ABA77CE007CFDE1 /* MJType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJType.m; sourceTree = "<group>"; };
+		93D636221ABA77CE007CFDE1 /* NSObject+MJCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJCoding.h"; sourceTree = "<group>"; };
+		93D636231ABA77CE007CFDE1 /* NSObject+MJCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJCoding.m"; sourceTree = "<group>"; };
+		93D636241ABA77CE007CFDE1 /* NSObject+MJIvar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJIvar.h"; sourceTree = "<group>"; };
+		93D636251ABA77CE007CFDE1 /* NSObject+MJIvar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJIvar.m"; sourceTree = "<group>"; };
+		93D636261ABA77CE007CFDE1 /* NSObject+MJKeyValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJKeyValue.h"; sourceTree = "<group>"; };
+		93D636271ABA77CE007CFDE1 /* NSObject+MJKeyValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJKeyValue.m"; sourceTree = "<group>"; };
+		93D636301ABA9A9C007CFDE1 /* InforModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InforModel.h; sourceTree = "<group>"; };
+		93D636311ABA9A9C007CFDE1 /* InforModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InforModel.m; sourceTree = "<group>"; };
+		93D636341ABA9BB0007CFDE1 /* LogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogInViewController.h; sourceTree = "<group>"; };
+		93D636351ABA9BB0007CFDE1 /* LogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogInViewController.m; sourceTree = "<group>"; };
+		93D636361ABA9BB0007CFDE1 /* LogInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LogInViewController.xib; sourceTree = "<group>"; };
+		93D6363D1ABA9E8E007CFDE1 /* LoginInfor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginInfor.h; sourceTree = "<group>"; };
+		93D6363E1ABA9E8E007CFDE1 /* LoginInfor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginInfor.m; sourceTree = "<group>"; };
+		93D636431ABAA7E9007CFDE1 /* LoginModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginModel.h; sourceTree = "<group>"; };
+		93D636441ABAA7E9007CFDE1 /* LoginModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginModel.m; sourceTree = "<group>"; };
 		93D69F491AA55AC0006938FE /* ChildHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildHTTPSessionManager.h; sourceTree = "<group>"; };
 		93D69F4A1AA55AC0006938FE /* ChildHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildHTTPSessionManager.m; sourceTree = "<group>"; };
 		93D69F501AA5621D006938FE /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
@@ -133,9 +167,6 @@
 		93E12FFD1A79FE2B002DEF43 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		93E12FFE1A79FE2B002DEF43 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		93E12FFF1A79FE2B002DEF43 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
-		93E130041A7A09B3002DEF43 /* LogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogInViewController.h; sourceTree = "<group>"; };
-		93E130051A7A09B3002DEF43 /* LogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogInViewController.m; sourceTree = "<group>"; };
-		93E130061A7A09B3002DEF43 /* LogInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LogInViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +187,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		93D636181ABA77CE007CFDE1 /* MJExtension */ = {
+			isa = PBXGroup;
+			children = (
+				93D636191ABA77CE007CFDE1 /* MJConst.h */,
+				93D6361A1ABA77CE007CFDE1 /* MJConst.m */,
+				93D6361B1ABA77CE007CFDE1 /* MJExtension.h */,
+				93D6361C1ABA77CE007CFDE1 /* MJFoundation.h */,
+				93D6361D1ABA77CE007CFDE1 /* MJFoundation.m */,
+				93D6361E1ABA77CE007CFDE1 /* MJIvar.h */,
+				93D6361F1ABA77CE007CFDE1 /* MJIvar.m */,
+				93D636201ABA77CE007CFDE1 /* MJType.h */,
+				93D636211ABA77CE007CFDE1 /* MJType.m */,
+				93D636221ABA77CE007CFDE1 /* NSObject+MJCoding.h */,
+				93D636231ABA77CE007CFDE1 /* NSObject+MJCoding.m */,
+				93D636241ABA77CE007CFDE1 /* NSObject+MJIvar.h */,
+				93D636251ABA77CE007CFDE1 /* NSObject+MJIvar.m */,
+				93D636261ABA77CE007CFDE1 /* NSObject+MJKeyValue.h */,
+				93D636271ABA77CE007CFDE1 /* NSObject+MJKeyValue.m */,
+			);
+			path = MJExtension;
+			sourceTree = "<group>";
+		};
+		93D6362F1ABA9A80007CFDE1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				93D636301ABA9A9C007CFDE1 /* InforModel.h */,
+				93D636311ABA9A9C007CFDE1 /* InforModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		93D636331ABA9BB0007CFDE1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				93D636341ABA9BB0007CFDE1 /* LogInViewController.h */,
+				93D636351ABA9BB0007CFDE1 /* LogInViewController.m */,
+				93D636361ABA9BB0007CFDE1 /* LogInViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		93D636371ABA9BB0007CFDE1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				93D6363D1ABA9E8E007CFDE1 /* LoginInfor.h */,
+				93D6363E1ABA9E8E007CFDE1 /* LoginInfor.m */,
+				93D636431ABAA7E9007CFDE1 /* LoginModel.h */,
+				93D636441ABAA7E9007CFDE1 /* LoginModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		93D69F4F1AA5620C006938FE /* BaseClass */ = {
 			isa = PBXGroup;
 			children = (
@@ -196,6 +279,7 @@
 		93DED2E11A81EB0600CBEB40 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				93D636181ABA77CE007CFDE1 /* MJExtension */,
 				93D69F5C1AA58AC0006938FE /* TMCache */,
 				93DED2FF1A81EB1B00CBEB40 /* UIKit+AFNetworking */,
 				93DED2E21A81EB1200CBEB40 /* AFNetworking */,
@@ -283,6 +367,7 @@
 		93E12FC41A79FB65002DEF43 /* ChildrenTemp */ = {
 			isa = PBXGroup;
 			children = (
+				93D6362F1ABA9A80007CFDE1 /* Model */,
 				93D69F4F1AA5620C006938FE /* BaseClass */,
 				93DED31B1A81ECE900CBEB40 /* DataManager */,
 				93DED2E11A81EB0600CBEB40 /* Libs */,
@@ -399,9 +484,8 @@
 		93E130021A7A09A5002DEF43 /* LoginViewController */ = {
 			isa = PBXGroup;
 			children = (
-				93E130041A7A09B3002DEF43 /* LogInViewController.h */,
-				93E130051A7A09B3002DEF43 /* LogInViewController.m */,
-				93E130061A7A09B3002DEF43 /* LogInViewController.xib */,
+				93D636331ABA9BB0007CFDE1 /* Controller */,
+				93D636371ABA9BB0007CFDE1 /* Model */,
 			);
 			path = LoginViewController;
 			sourceTree = "<group>";
@@ -498,8 +582,8 @@
 			files = (
 				93E12FD31A79FB65002DEF43 /* Images.xcassets in Resources */,
 				93E130011A79FE2B002DEF43 /* HomeViewController.xib in Resources */,
-				93E130081A7A09B3002DEF43 /* LogInViewController.xib in Resources */,
 				93DED2AC1A81B78600CBEB40 /* RegisterViewController.xib in Resources */,
+				93D636391ABA9BB0007CFDE1 /* LogInViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,25 +604,35 @@
 				93DED2FE1A81EB1200CBEB40 /* AFURLSessionManager.m in Sources */,
 				93DED2FB1A81EB1200CBEB40 /* AFURLConnectionOperation.m in Sources */,
 				93DED3171A81EB1B00CBEB40 /* UIRefreshControl+AFNetworking.m in Sources */,
+				93D636291ABA77CE007CFDE1 /* MJFoundation.m in Sources */,
+				93D636451ABAA7E9007CFDE1 /* LoginModel.m in Sources */,
+				93D6362E1ABA77CE007CFDE1 /* NSObject+MJKeyValue.m in Sources */,
 				93D69F551AA56249006938FE /* StatusInfoModel.m in Sources */,
 				93DED3141A81EB1B00CBEB40 /* UIButton+AFNetworking.m in Sources */,
+				93D6363F1ABA9E8E007CFDE1 /* LoginInfor.m in Sources */,
 				93DED3161A81EB1B00CBEB40 /* UIProgressView+AFNetworking.m in Sources */,
 				93DED2F61A81EB1200CBEB40 /* AFHTTPRequestOperation.m in Sources */,
+				93D6362D1ABA77CE007CFDE1 /* NSObject+MJIvar.m in Sources */,
+				93D636321ABA9A9C007CFDE1 /* InforModel.m in Sources */,
 				93D69F651AA58AC0006938FE /* TMMemoryCache.m in Sources */,
 				93E12FF51A79FD81002DEF43 /* AppDelegate.m in Sources */,
+				93D636281ABA77CE007CFDE1 /* MJConst.m in Sources */,
+				93D636381ABA9BB0007CFDE1 /* LogInViewController.m in Sources */,
 				93D69F641AA58AC0006938FE /* TMDiskCache.m in Sources */,
+				93D6362A1ABA77CE007CFDE1 /* MJIvar.m in Sources */,
 				93DED3131A81EB1B00CBEB40 /* UIAlertView+AFNetworking.m in Sources */,
+				93D6362B1ABA77CE007CFDE1 /* MJType.m in Sources */,
 				93DED2F71A81EB1200CBEB40 /* AFHTTPRequestOperationManager.m in Sources */,
 				93D69F521AA5621D006938FE /* BaseModel.m in Sources */,
 				93D69F631AA58AC0006938FE /* TMCache.m in Sources */,
 				93E12FF91A79FDD7002DEF43 /* BaseViewController.m in Sources */,
 				93DED2A71A81B71800CBEB40 /* MyButton.m in Sources */,
+				93D6362C1ABA77CE007CFDE1 /* NSObject+MJCoding.m in Sources */,
 				93D69F4B1AA55AC0006938FE /* ChildHTTPSessionManager.m in Sources */,
 				93DED3151A81EB1B00CBEB40 /* UIImageView+AFNetworking.m in Sources */,
 				93DED2F81A81EB1200CBEB40 /* AFHTTPSessionManager.m in Sources */,
 				93DED3121A81EB1B00CBEB40 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				93DED3111A81EB1B00CBEB40 /* AFNetworkActivityIndicatorManager.m in Sources */,
-				93E130071A7A09B3002DEF43 /* LogInViewController.m in Sources */,
 				93E12FFC1A79FDF3002DEF43 /* MyNavgationViewController.m in Sources */,
 				93E130001A79FE2B002DEF43 /* HomeViewController.m in Sources */,
 				93DED2FA1A81EB1200CBEB40 /* AFSecurityPolicy.m in Sources */,

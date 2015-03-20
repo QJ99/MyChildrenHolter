@@ -67,9 +67,6 @@
 }
 #pragma mark -登录
 -(void)tapLogInButton:(UIButton*)button{
-    
-    
-    NSLog(@"%@--------------%@",_userNameTextfield.text,_passWordTextfield.text);
     if (!_userNameTextfield || ![_userNameTextfield.text length]) {
         [HDM popHlintMsg:@"请输入手机号或邮箱!"];
     }
@@ -82,7 +79,7 @@
         return;
     }
     [HHM postLogin:@{@"account": _userNameTextfield.text,
-                     @"password": _passWordTextfield.text} success:^(StatusInfoModel *status, UserInfoModel *userInf) {
+                     @"password": _passWordTextfield.text} success:^(LoginInfor *status, LoginModel *userInf) {
                          
                      } failure:^(NSError *error) {
                          [HDM errorPopMsg:error];

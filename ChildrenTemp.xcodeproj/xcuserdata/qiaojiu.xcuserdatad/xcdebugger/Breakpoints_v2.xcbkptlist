@@ -9,44 +9,14 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ChildrenTemp/Controllers/LoginViewController/LogInViewController.m"
-            timestampString = "447057713.296279"
+            filePath = "ChildrenTemp/BaseClass/BaseModel.m"
+            timestampString = "448443336.828364"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "86"
-            endingLineNumber = "86"
-            landmarkName = "-tapLogInButton:"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "+instancefromJsonDic:"
             landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__38-[LogInViewController tapLogInButton:]_block_invoke"
-                  moduleName = "ChildrenTemp"
-                  urlString = "file:///Users/qiaojiu/Desktop/MyChildrenHolter/ChildrenTemp/Controllers/LoginViewController/LogInViewController.m"
-                  timestampString = "447060953.689274"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "87"
-                  endingLineNumber = "87"
-                  offsetFromSymbolStart = "89">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__38-[LogInViewController tapLogInButton:]_block_invoke_2"
-                  moduleName = "ChildrenTemp"
-                  urlString = "file:///Users/qiaojiu/Desktop/MyChildrenHolter/ChildrenTemp/Controllers/LoginViewController/LogInViewController.m"
-                  timestampString = "447060953.689476"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "87"
-                  endingLineNumber = "87"
-                  offsetFromSymbolStart = "36">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
