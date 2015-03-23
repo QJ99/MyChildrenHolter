@@ -8,7 +8,9 @@
 
 #import "LogInViewController.h"
 #import "RegisterViewController.h"
-
+#import "UserInfoModel.h"
+#import "HomeViewController.h"
+//#import "TMCache.h"
 @interface LogInViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *loginButton;
 @property (weak, nonatomic) IBOutlet UITextField *userNameTextfield;
@@ -32,6 +34,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    UserInfoModel *model = [TMC restoreWithKey:kUserInfor];
+    if (model) {
+        _passWordTextfield.text = model.password;
+        _userNameTextfield.text = model.userName;
+    }
+    
     [_registerButton.imageView setContentMode:UIViewContentModeScaleAspectFit];
     [_registerButton setBackgroundImage:[UIImage imageNamed:@"login_register.png"] forState:UIControlStateNormal];
     [_loginButton setBackgroundColor: kcolorWithRGB(255,131,85)];
@@ -78,8 +86,19 @@
         [HDM popHlintMsg:@"请输入密码[长度6-16位]!"];
         return;
     }
+    UserInfoModel *model = [TMC restoreWithKey:kUserInfor];
+    if(!model){
+        model = [[UserInfoModel alloc]init];
+    }
     [HHM postLogin:@{@"account": _userNameTextfield.text,
                      @"password": _passWordTextfield.text} success:^(LoginInfor *status, LoginModel *userInf) {
+                         if ([status.status intValue] == 1) {//登陆成功
+                             model.userName = _userNameTextfield.text;
+                             model.password = _passWordTextfield.text;
+                             [TMC storeWithObject:model forKey:kUserInfor];
+                             HomeViewController *home = [[HomeViewController alloc]initWithNibName:@"HomeViewController" bundle:nil];
+                             [self.navigationController pushViewController:home animated:YES];
+                         }
                          
                      } failure:^(NSError *error) {
                          [HDM errorPopMsg:error];

@@ -7,7 +7,8 @@
 //
 
 #import "HomeViewController.h"
-
+#import "HomeLeftView.h"
+#define kdisRight 70
 @interface HomeViewController ()
 
 @end
@@ -17,6 +18,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    HomeLeftView *leftView = [HomeLeftView loadHomeLeftView];
+    leftView.frame = CGRectMake(0, 0, self.view.frame.size.width-kdisRight, self.view.frame.size.height);
+    [self.view addSubview:leftView];
     
 }
 
