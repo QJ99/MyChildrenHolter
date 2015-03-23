@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController">
+            <connections>
+                <outlet property="RegisterButton" destination="qe8-S2-CIo" id="zMT-38-iVN"/>
+                <outlet property="passWordTextField" destination="gJu-wY-w4g" id="KMO-7Q-n33"/>
+                <outlet property="popButton" destination="c3N-Q3-kOh" id="4aI-fV-8AK"/>
+                <outlet property="userTextField" destination="sUo-a7-71L" id="8lF-5y-AlO"/>
+                <outlet property="view" destination="KAw-4h-gkn" id="09g-uE-0C0"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="KAw-4h-gkn">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_register_bg" translatesAutoresizingMaskIntoConstraints="NO" id="bKI-bz-CW1">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <gestureRecognizers/>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="手机号或者邮箱" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sUo-a7-71L">
+                    <rect key="frame" x="27" y="189" width="546" height="30"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="M0g-Pk-av2"/>
+                    </constraints>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                    <connections>
+                        <action selector="doneQuite:" destination="-1" eventType="editingDidEndOnExit" id="3SS-de-j3s"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="密码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gJu-wY-w4g">
+                    <rect key="frame" x="27" y="219" width="546" height="30"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="9cf-TO-dQS"/>
+                    </constraints>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="done" secureTextEntry="YES"/>
+                    <connections>
+                        <action selector="doneQuite:" destination="-1" eventType="editingDidEndOnExit" id="AkO-WI-9mC"/>
+                    </connections>
+                </textField>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tEa-wk-2qr">
+                    <rect key="frame" x="27" y="219" width="546" height="1"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <rect key="contentStretch" x="0.5" y="0.5" width="0.5" height="0.5"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="qPx-yM-yvz"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qe8-S2-CIo" customClass="MyButton">
+                    <rect key="frame" x="27" y="299" width="546" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="7cg-pZ-Cqt"/>
+                    </constraints>
+                    <state key="normal" title="注 册">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="registerButtonClick:" destination="-1" eventType="touchUpInside" id="Nlj-XP-NLM"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c3N-Q3-kOh" customClass="MyButton">
+                    <rect key="frame" x="0.0" y="550" width="600" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="MOy-MA-Gjk"/>
+                    </constraints>
+                    <state key="normal" title="已有账号，直接登录">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="popVC:" destination="-1" eventType="touchUpInside" id="lnN-p4-6ha"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="c3N-Q3-kOh" secondAttribute="bottom" id="1lJ-6D-V73"/>
+                <constraint firstItem="qe8-S2-CIo" firstAttribute="leading" secondItem="KAw-4h-gkn" secondAttribute="leading" constant="27" id="4vh-OW-oNJ"/>
+                <constraint firstItem="bKI-bz-CW1" firstAttribute="top" secondItem="KAw-4h-gkn" secondAttribute="top" id="6oG-M0-ZC4"/>
+                <constraint firstItem="tEa-wk-2qr" firstAttribute="leading" secondItem="KAw-4h-gkn" secondAttribute="leading" constant="27" id="8TR-xa-zu2"/>
+                <constraint firstAttribute="bottom" secondItem="bKI-bz-CW1" secondAttribute="bottom" id="E5N-2I-7sK"/>
+                <constraint firstItem="sUo-a7-71L" firstAttribute="top" secondItem="KAw-4h-gkn" secondAttribute="top" constant="189" id="Inf-IA-A2d"/>
+                <constraint firstAttribute="trailing" secondItem="qe8-S2-CIo" secondAttribute="trailing" constant="27" id="RHd-2t-szz"/>
+                <constraint firstAttribute="trailing" secondItem="bKI-bz-CW1" secondAttribute="trailing" id="RtG-EA-sig"/>
+                <constraint firstItem="qe8-S2-CIo" firstAttribute="top" secondItem="gJu-wY-w4g" secondAttribute="bottom" constant="50" id="XaT-oN-zt7"/>
+                <constraint firstAttribute="trailing" secondItem="c3N-Q3-kOh" secondAttribute="trailing" id="YcP-OW-bkw"/>
+                <constraint firstItem="bKI-bz-CW1" firstAttribute="leading" secondItem="KAw-4h-gkn" secondAttribute="leading" id="aSk-MU-Jut"/>
+                <constraint firstItem="gJu-wY-w4g" firstAttribute="leading" secondItem="KAw-4h-gkn" secondAttribute="leading" constant="27" id="bTN-2w-YfF"/>
+                <constraint firstAttribute="trailing" secondItem="sUo-a7-71L" secondAttribute="trailing" constant="27" id="iDI-oj-zBp"/>
+                <constraint firstAttribute="trailing" secondItem="gJu-wY-w4g" secondAttribute="trailing" constant="27" id="ogP-Un-ySG"/>
+                <constraint firstItem="gJu-wY-w4g" firstAttribute="top" secondItem="sUo-a7-71L" secondAttribute="bottom" id="qCx-5Y-h3g"/>
+                <constraint firstItem="c3N-Q3-kOh" firstAttribute="leading" secondItem="KAw-4h-gkn" secondAttribute="leading" id="qtc-Ni-ODV"/>
+                <constraint firstItem="tEa-wk-2qr" firstAttribute="top" secondItem="sUo-a7-71L" secondAttribute="bottom" id="vyA-L3-KWN"/>
+                <constraint firstItem="sUo-a7-71L" firstAttribute="leading" secondItem="KAw-4h-gkn" secondAttribute="leading" constant="27" id="xoB-0c-ynE"/>
+                <constraint firstAttribute="trailing" secondItem="tEa-wk-2qr" secondAttribute="trailing" constant="27" id="yKu-oJ-EOl"/>
+            </constraints>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="VtR-cZ-Ofl" appends="YES" id="b0k-kw-D5z"/>
+            </connections>
+        </view>
+        <tapGestureRecognizer id="VtR-cZ-Ofl">
+            <connections>
+                <action selector="quitKeyBoard:" destination="-1" id="nXt-Oh-fJc"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="login_register_bg" width="640" height="1136"/>
+    </resources>
+</document>
