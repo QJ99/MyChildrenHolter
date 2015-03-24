@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TempViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HQt-e3-oQn">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="51G-me-vD0">
+                            <rect key="frame" x="8" y="7" width="60" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="vHu-8s-iiR"/>
+                            </constraints>
+                            <state key="normal" image="common_menu">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.99215686270000003" green="0.42745098040000001" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="64" id="9V7-Q2-3Vk"/>
+                        <constraint firstItem="51G-me-vD0" firstAttribute="leading" secondItem="HQt-e3-oQn" secondAttribute="leading" constant="8" id="HCJ-FZ-mfV"/>
+                        <constraint firstAttribute="height" constant="64" id="MCA-ai-Sww"/>
+                        <constraint firstItem="51G-me-vD0" firstAttribute="top" secondItem="HQt-e3-oQn" secondAttribute="top" constant="7" id="RWj-xa-k2S"/>
+                        <constraint firstAttribute="bottom" secondItem="51G-me-vD0" secondAttribute="bottom" constant="7" id="nI0-EH-DfI"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="HQt-e3-oQn" secondAttribute="trailing" id="1Nk-lg-fd0"/>
+                <constraint firstItem="HQt-e3-oQn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="58j-Ea-1me"/>
+                <constraint firstItem="HQt-e3-oQn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="l7c-43-y9e"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="common_menu" width="80" height="88"/>
+    </resources>
+</document>

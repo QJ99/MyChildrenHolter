@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -20,19 +20,19 @@
                             <constraint firstAttribute="height" constant="1" id="IcX-7D-cv2"/>
                         </constraints>
                     </imageView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hpu-0n-TvP">
-                        <rect key="frame" x="10" y="10" width="30" height="30"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hpu-0n-TvP">
+                        <rect key="frame" x="10" y="5" width="35" height="35"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="30" id="9Eb-Ni-bxq"/>
+                            <constraint firstAttribute="width" constant="35" id="9Eb-Ni-bxq"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="imH-Id-NZW">
-                        <rect key="frame" x="60" y="13" width="200" height="22"/>
+                        <rect key="frame" x="65" y="13" width="200" height="22"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="200" id="vay-fw-Bg6"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
@@ -41,7 +41,7 @@
                     <constraint firstItem="lbC-lw-WSS" firstAttribute="top" secondItem="hpu-0n-TvP" secondAttribute="bottom" constant="8" id="OXQ-US-ROX"/>
                     <constraint firstAttribute="trailing" secondItem="lbC-lw-WSS" secondAttribute="trailing" id="OeE-fL-8jp"/>
                     <constraint firstItem="lbC-lw-WSS" firstAttribute="top" secondItem="imH-Id-NZW" secondAttribute="bottom" constant="13" id="SMk-qS-Ags"/>
-                    <constraint firstItem="hpu-0n-TvP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="UZz-tn-9qO"/>
+                    <constraint firstItem="hpu-0n-TvP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="UZz-tn-9qO"/>
                     <constraint firstItem="lbC-lw-WSS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="VBS-He-PTg"/>
                     <constraint firstItem="hpu-0n-TvP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="lMM-XK-QW8"/>
                     <constraint firstAttribute="bottom" secondItem="lbC-lw-WSS" secondAttribute="bottom" constant="0.5" id="sy0-lg-4hb"/>
@@ -49,10 +49,9 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="customeTitle" destination="imH-Id-NZW" id="xdA-SM-2Re"/>
                 <outlet property="iconImageView" destination="hpu-0n-TvP" id="UXK-cQ-PSw"/>
                 <outlet property="spliteLine" destination="lbC-lw-WSS" id="6iS-JJ-tgz"/>
-                <outlet property="textLabel" destination="imH-Id-NZW" id="jGa-1n-gJ7"/>
-                <outlet property="titleLabel" destination="imH-Id-NZW" id="wVs-yJ-4Ut"/>
             </connections>
         </tableViewCell>
     </objects>

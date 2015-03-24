@@ -1,23 +1,27 @@
 //
-//  MyNavgationViewController.m
+//  EnvironViewController.m
 //  ChildrenTemp
 //
-//  Created by QJ on 15/1/29.
+//  Created by qj on 15/3/24.
 //  Copyright (c) 2015年 QJ. All rights reserved.
 //
 
-#import "MyNavgationViewController.h"
+#import "EnvironViewController.h"
 
-@interface MyNavgationViewController ()
+@interface EnvironViewController ()
 
 @end
 
-@implementation MyNavgationViewController
-
+@implementation EnvironViewController
+-(instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil{
+    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
+        
+    }
+    return self;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    self.navigationBarHidden = YES;
+    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)didReceiveMemoryWarning {

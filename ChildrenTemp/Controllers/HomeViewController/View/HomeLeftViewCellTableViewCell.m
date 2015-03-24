@@ -16,7 +16,7 @@
     // Initialization code
     [_spliteLine setBackgroundColor:[UIColor blackColor]];
     [_spliteLine setAlpha:0.1];
-    [_titleLabel setTextColor:[UIColor whiteColor]];
+    [_customeTitle setTextColor:[UIColor whiteColor]];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

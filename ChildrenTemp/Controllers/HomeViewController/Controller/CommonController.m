@@ -1,23 +1,27 @@
 //
-//  MyNavgationViewController.m
+//  CommonController.m
 //  ChildrenTemp
 //
-//  Created by QJ on 15/1/29.
+//  Created by qj on 15/3/24.
 //  Copyright (c) 2015年 QJ. All rights reserved.
 //
 
-#import "MyNavgationViewController.h"
+#import "CommonController.h"
 
-@interface MyNavgationViewController ()
+@interface CommonController ()
 
 @end
 
-@implementation MyNavgationViewController
+@implementation CommonController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.navigationBarHidden = YES;
+}
+- (IBAction)menuButtonClick:(UIButton *)sender {
+    if ([_delegate respondsToSelector:@selector(mainMenuButtonClick:isTapButton:)]) {
+        [_delegate mainMenuButtonClick:self isTapButton:YES];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
