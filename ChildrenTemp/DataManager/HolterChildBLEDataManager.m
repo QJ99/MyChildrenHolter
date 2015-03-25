@@ -62,9 +62,7 @@
     NSData *deviceData = [[NSData alloc] initWithBytes:byte length:2];
     return [CBUUID UUIDWithData:deviceData];
 }
-
 - (void)startScanPeripheral:(BOOL)scan doneBlock:(CentralStateBlock)centralStateBlock {
-    
     if (!scan) {
         if (centralStateBlock) {
             _centralStateBlock = centralStateBlock;
@@ -588,7 +586,6 @@
                     } else if ([characteristic.UUID isEqual:[CBUUID UUIDWithString:@"FFF5"]]) {
                         [self historyTempTimeDataWrite];
                     }
-                    
                     if ([characteristic.UUID isEqual:[CBUUID UUIDWithString:@"FFF7"]]) {
                         [_curPeripheral setNotifyValue:YES forCharacteristic:characteristic];
                     }

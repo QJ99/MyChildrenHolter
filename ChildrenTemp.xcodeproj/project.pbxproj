@@ -34,6 +34,10 @@
 		93C8B1611AC2558200D9D442 /* ConnectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C8B15F1AC2558200D9D442 /* ConnectViewController.m */; };
 		93C8B1621AC2558200D9D442 /* ConnectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93C8B1601AC2558200D9D442 /* ConnectViewController.xib */; };
 		93C8B1681AC2925500D9D442 /* HolterChildBLEDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C8B1671AC2925500D9D442 /* HolterChildBLEDataManager.m */; };
+		93C8B1731AC2A69200D9D442 /* DeviceScanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C8B1721AC2A69200D9D442 /* DeviceScanView.m */; };
+		93C8B1751AC2A69D00D9D442 /* DeviceScanView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93C8B1741AC2A69D00D9D442 /* DeviceScanView.xib */; };
+		93C8B1791AC2B3A200D9D442 /* DeviceScanViewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C8B1771AC2B3A200D9D442 /* DeviceScanViewTableViewCell.m */; };
+		93C8B17A1AC2B3A200D9D442 /* DeviceScanViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93C8B1781AC2B3A200D9D442 /* DeviceScanViewTableViewCell.xib */; };
 		93D636281ABA77CE007CFDE1 /* MJConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D6361A1ABA77CE007CFDE1 /* MJConst.m */; };
 		93D636291ABA77CE007CFDE1 /* MJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D6361D1ABA77CE007CFDE1 /* MJFoundation.m */; };
 		93D6362A1ABA77CE007CFDE1 /* MJIvar.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D6361F1ABA77CE007CFDE1 /* MJIvar.m */; };
@@ -137,6 +141,12 @@
 		93C8B1601AC2558200D9D442 /* ConnectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConnectViewController.xib; sourceTree = "<group>"; };
 		93C8B1661AC2925500D9D442 /* HolterChildBLEDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HolterChildBLEDataManager.h; sourceTree = "<group>"; };
 		93C8B1671AC2925500D9D442 /* HolterChildBLEDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HolterChildBLEDataManager.m; sourceTree = "<group>"; };
+		93C8B1711AC2A69200D9D442 /* DeviceScanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceScanView.h; sourceTree = "<group>"; };
+		93C8B1721AC2A69200D9D442 /* DeviceScanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceScanView.m; sourceTree = "<group>"; };
+		93C8B1741AC2A69D00D9D442 /* DeviceScanView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeviceScanView.xib; sourceTree = "<group>"; };
+		93C8B1761AC2B3A200D9D442 /* DeviceScanViewTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceScanViewTableViewCell.h; sourceTree = "<group>"; };
+		93C8B1771AC2B3A200D9D442 /* DeviceScanViewTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceScanViewTableViewCell.m; sourceTree = "<group>"; };
+		93C8B1781AC2B3A200D9D442 /* DeviceScanViewTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeviceScanViewTableViewCell.xib; sourceTree = "<group>"; };
 		93D636191ABA77CE007CFDE1 /* MJConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJConst.h; sourceTree = "<group>"; };
 		93D6361A1ABA77CE007CFDE1 /* MJConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJConst.m; sourceTree = "<group>"; };
 		93D6361B1ABA77CE007CFDE1 /* MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtension.h; sourceTree = "<group>"; };
@@ -477,6 +487,12 @@
 			children = (
 				93DED2A51A81B71800CBEB40 /* MyButton.h */,
 				93DED2A61A81B71800CBEB40 /* MyButton.m */,
+				93C8B1711AC2A69200D9D442 /* DeviceScanView.h */,
+				93C8B1721AC2A69200D9D442 /* DeviceScanView.m */,
+				93C8B1741AC2A69D00D9D442 /* DeviceScanView.xib */,
+				93C8B1761AC2B3A200D9D442 /* DeviceScanViewTableViewCell.h */,
+				93C8B1771AC2B3A200D9D442 /* DeviceScanViewTableViewCell.m */,
+				93C8B1781AC2B3A200D9D442 /* DeviceScanViewTableViewCell.xib */,
 			);
 			path = CommonClass;
 			sourceTree = "<group>";
@@ -766,6 +782,8 @@
 				31BC19211AC056A90074A1FD /* HomeLeftViewCellTableViewCell.xib in Resources */,
 				93E12FD31A79FB65002DEF43 /* Images.xcassets in Resources */,
 				31E32C7E1AC1ABED00E71DFD /* ColothingViewController.xib in Resources */,
+				93C8B1751AC2A69D00D9D442 /* DeviceScanView.xib in Resources */,
+				93C8B17A1AC2B3A200D9D442 /* DeviceScanViewTableViewCell.xib in Resources */,
 				93C8B1561AC2482300D9D442 /* RemindViewController.xib in Resources */,
 				31E32C831AC1ABFC00E71DFD /* EnvironViewController.xib in Resources */,
 				31E32C881AC1AC0D00E71DFD /* TempViewController.xib in Resources */,
@@ -818,6 +836,7 @@
 				93C8B1681AC2925500D9D442 /* HolterChildBLEDataManager.m in Sources */,
 				93E12FF51A79FD81002DEF43 /* AppDelegate.m in Sources */,
 				93D636281ABA77CE007CFDE1 /* MJConst.m in Sources */,
+				93C8B1731AC2A69200D9D442 /* DeviceScanView.m in Sources */,
 				93D636381ABA9BB0007CFDE1 /* LogInViewController.m in Sources */,
 				93D69F641AA58AC0006938FE /* TMDiskCache.m in Sources */,
 				93D6362A1ABA77CE007CFDE1 /* MJIvar.m in Sources */,
@@ -844,6 +863,7 @@
 				93D69F5B1AA56744006938FE /* HolterChildDataManager.m in Sources */,
 				93E12FC81A79FB65002DEF43 /* main.m in Sources */,
 				93DED2FC1A81EB1200CBEB40 /* AFURLRequestSerialization.m in Sources */,
+				93C8B1791AC2B3A200D9D442 /* DeviceScanViewTableViewCell.m in Sources */,
 				31E32C8B1AC1AEE300E71DFD /* CommonController.m in Sources */,
 				93DED2F91A81EB1200CBEB40 /* AFNetworkReachabilityManager.m in Sources */,
 				93DED3181A81EB1B00CBEB40 /* UIWebView+AFNetworking.m in Sources */,

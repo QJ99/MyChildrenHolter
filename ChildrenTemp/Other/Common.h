@@ -28,6 +28,8 @@
  *  用户信息存储关键字
  */
 #define kUserInfor @"kUserInfor"
+//搜索到的蓝牙
+#define kperipherName @"peripherName"
 //基类地址
 #define kHttpRequestPath @"http://www.tmholter.com/baby/index.php/Interface/"
 #define kcolorWithRGB(r,g,b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1.0]

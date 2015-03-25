@@ -7,7 +7,7 @@
 //
 
 #import "ConnectViewController.h"
-
+#import "DeviceScanView.h"
 @interface ConnectViewController ()
 @property (weak, nonatomic) IBOutlet UIView *bottomView;
 @property (weak, nonatomic) IBOutlet UIView *middleView;
@@ -20,6 +20,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     [self buildUI];
+    DeviceScanView *device = [DeviceScanView loadDeviceScan];
+    device.frame = CGRectMake(20, 100, 280, 180);
+    [self.view addSubview:device];
+        [self.view setBackgroundColor:[UIColor darkGrayColor]];
 }
 #pragma mark -界面搭建
 -(void)buildUI{
@@ -40,9 +44,38 @@
 }
 #pragma mark -连接蓝牙
 -(void)connectLightBule:(UIButton*)connectButton{
-    [HBM startScanPeripheral:YES doneBlock:^(CBCentralManagerState centralState, BOOL refresh, NSArray *peripheralDicArr) {
-        MyLog(@"%d-----%d-------%@",centralState,refresh,peripheralDicArr);
-    }];
+    switch (HBM.bleAction) {
+        case bleNotConnect:{
+            [_connectButton setTitle:@"连接设备中..." forState:UIControlStateNormal];
+            [HBM startScanPeripheral:YES doneBlock:^(CBCentralManagerState centralState, BOOL refresh, NSArray *peripheralDicArr) {
+                
+            }];
+        }
+            break;
+        case bleScanning:{
+            [HBM stopScanPeripheral];
+            [_connectButton setTitle:@"连接设备" forState:UIControlStateNormal];
+        }
+            break;
+        case bleConnecting:{
+            [HBM cancelPeripheralConnectionDoneBlock:^(CBPeripheral *peripheral) {
+                
+            }];
+        }
+            break;
+        case bleConnected:{
+            [HBM cancelPeripheralConnectionDoneBlock:^(CBPeripheral *peripheral) {
+                
+            }];
+        }
+            break;
+        case bleNotify:{
+            [HBM fetchActualTimeDataEnable:NO doneBlock:nil];
+        }
+            break;
+        default:
+            break;
+    }
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
