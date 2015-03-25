@@ -21,7 +21,7 @@
     // Do any additional setup after loading the view from its nib.
     [self buildUI];
     DeviceScanView *device = [DeviceScanView loadDeviceScan];
-    device.frame = CGRectMake(20, 100, 280, 180);
+    device.frame = CGRectMake(20, 100, 280, 130);
     [self.view addSubview:device];
         [self.view setBackgroundColor:[UIColor darkGrayColor]];
 }

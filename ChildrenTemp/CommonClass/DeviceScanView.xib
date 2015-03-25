@@ -35,13 +35,19 @@
                         <outlet property="delegate" destination="LHB-WU-pIi" id="QjL-6R-POS"/>
                     </connections>
                 </tableView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7ih-rd-UA7">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7ih-rd-UA7">
                     <rect key="frame" x="0.0" y="138" width="280" height="1"/>
                     <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="ht3-Fz-NWA"/>
+                    </constraints>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z0v-qm-Ajc">
                     <rect key="frame" x="139" y="138" width="1" height="42"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="MCF-Wu-k9i"/>
+                    </constraints>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1l9-RM-LVB">
                     <rect key="frame" x="0.0" y="143" width="138" height="37"/>
@@ -78,11 +84,11 @@
                 <constraint firstItem="Z0v-qm-Ajc" firstAttribute="leading" secondItem="LHB-WU-pIi" secondAttribute="leading" constant="139" id="4UM-YY-WId"/>
                 <constraint firstAttribute="bottom" secondItem="agk-To-iyg" secondAttribute="bottom" constant="45" id="5hX-yD-DdF"/>
                 <constraint firstItem="1l9-RM-LVB" firstAttribute="leading" secondItem="LHB-WU-pIi" secondAttribute="leading" id="9pf-iH-h3I"/>
+                <constraint firstItem="7ih-rd-UA7" firstAttribute="leading" secondItem="LHB-WU-pIi" secondAttribute="leading" id="Gr8-c7-esp"/>
                 <constraint firstItem="1l9-RM-LVB" firstAttribute="top" secondItem="agk-To-iyg" secondAttribute="bottom" constant="8" id="Gtd-Vz-2W6"/>
-                <constraint firstItem="LPR-2y-klt" firstAttribute="top" secondItem="agk-To-iyg" secondAttribute="bottom" constant="3" id="Gtz-9t-Aff"/>
-                <constraint firstItem="Z0v-qm-Ajc" firstAttribute="top" secondItem="LHB-WU-pIi" secondAttribute="top" constant="138" id="KXG-Og-S2g"/>
                 <constraint firstItem="agk-To-iyg" firstAttribute="leading" secondItem="LHB-WU-pIi" secondAttribute="leading" id="MKe-2c-0eu"/>
                 <constraint firstItem="V4y-7x-C5Q" firstAttribute="top" secondItem="BT1-ls-ABh" secondAttribute="bottom" constant="1" id="NYs-UA-Hgm"/>
+                <constraint firstItem="LPR-2y-klt" firstAttribute="top" secondItem="7ih-rd-UA7" secondAttribute="bottom" constant="4" id="Nsi-Wj-EMK"/>
                 <constraint firstAttribute="trailing" secondItem="agk-To-iyg" secondAttribute="trailing" id="RQZ-dx-szF"/>
                 <constraint firstItem="LPR-2y-klt" firstAttribute="top" secondItem="agk-To-iyg" secondAttribute="bottom" constant="8" id="Xo5-6f-WJM"/>
                 <constraint firstAttribute="trailing" secondItem="BT1-ls-ABh" secondAttribute="trailing" constant="8" id="Xv1-w1-xfP"/>
@@ -91,16 +97,12 @@
                 <constraint firstItem="BT1-ls-ABh" firstAttribute="leading" secondItem="LHB-WU-pIi" secondAttribute="leading" constant="8" id="cze-Gd-O4o"/>
                 <constraint firstItem="agk-To-iyg" firstAttribute="top" secondItem="V4y-7x-C5Q" secondAttribute="bottom" id="gN6-nt-PjN"/>
                 <constraint firstAttribute="trailing" secondItem="V4y-7x-C5Q" secondAttribute="trailing" id="kJH-xL-1cu"/>
+                <constraint firstAttribute="trailing" secondItem="7ih-rd-UA7" secondAttribute="trailing" id="kkO-n3-Gxu"/>
                 <constraint firstItem="BT1-ls-ABh" firstAttribute="top" secondItem="LHB-WU-pIi" secondAttribute="top" id="lks-fZ-Wpx"/>
                 <constraint firstAttribute="bottom" secondItem="Z0v-qm-Ajc" secondAttribute="bottom" id="wwL-HK-HFG"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <variation key="default">
-                <mask key="constraints">
-                    <exclude reference="Gtz-9t-Aff"/>
-                </mask>
-            </variation>
             <connections>
                 <outlet property="myTableView" destination="agk-To-iyg" id="cBz-ZX-L9N"/>
             </connections>
