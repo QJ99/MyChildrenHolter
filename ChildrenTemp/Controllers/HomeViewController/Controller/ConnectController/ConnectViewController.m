@@ -12,6 +12,8 @@
 @property (weak, nonatomic) IBOutlet UIView *bottomView;
 @property (weak, nonatomic) IBOutlet UIView *middleView;
 @property (weak, nonatomic) IBOutlet UIButton *connectButton;
+@property (strong, nonatomic) NSMutableArray *blueToothArrayM;
+@property (strong, nonatomic) DeviceScanView *deviceScan;
 @end
 
 @implementation ConnectViewController
@@ -20,10 +22,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     [self buildUI];
-    DeviceScanView *device = [DeviceScanView loadDeviceScan];
-    device.frame = CGRectMake(20, 100, 280, 130);
-    [self.view addSubview:device];
-        [self.view setBackgroundColor:[UIColor darkGrayColor]];
+//    DeviceScanView *device = [DeviceScanView loadDeviceScan];
+//    device.frame = CGRectMake(20, 100, 280, 130);
+//    [self.view addSubview:device];
+//    [self.view setBackgroundColor:[UIColor darkGrayColor]];
 }
 #pragma mark -界面搭建
 -(void)buildUI{
@@ -48,7 +50,17 @@
         case bleNotConnect:{
             [_connectButton setTitle:@"连接设备中..." forState:UIControlStateNormal];
             [HBM startScanPeripheral:YES doneBlock:^(CBCentralManagerState centralState, BOOL refresh, NSArray *peripheralDicArr) {
-                
+                if (!_blueToothArrayM) {
+                    _blueToothArrayM = [NSMutableArray array];
+                    [_blueToothArrayM addObjectsFromArray:peripheralDicArr];
+                }else{
+                    [_blueToothArrayM removeAllObjects];
+                    [_blueToothArrayM addObjectsFromArray:peripheralDicArr];
+                }
+                [[self class]cancelPreviousPerformRequestsWithTarget:self selector:@selector(selectedBlueTooth) object:nil];
+                if (peripheralDicArr.count == 1) {
+                    [self performSelector:@selector(selectedBlueTooth) withObject:nil afterDelay:5.0];
+                }
             }];
         }
             break;
@@ -75,6 +87,41 @@
             break;
         default:
             break;
+    }
+}
+#pragma mark -搜索到的蓝牙设备
+-(void)selectedBlueTooth{
+    if (![_blueToothArrayM count]) {//没有搜到蓝牙设备
+        return;
+    }
+    if(!_deviceScan){
+        UIWindow *keywindow = [UIApplication sharedApplication].keyWindow;
+        UIView *peripheralContainView = [[UIView alloc]initWithFrame:keywindow.bounds];
+        [peripheralContainView setBackgroundColor:[UIColor clearColor]];
+        [keywindow addSubview:peripheralContainView];
+        
+        UIView *peripherlAlphaView = [[UIView alloc]initWithFrame:peripheralContainView.bounds];
+        [peripherlAlphaView setBackgroundColor:[UIColor blackColor]];
+        [peripherlAlphaView setAlpha:0.0];
+        [peripheralContainView addSubview:peripherlAlphaView];
+        
+        _deviceScan = [DeviceScanView loadDeviceScan];
+        _deviceScan.center = CGPointMake(peripheralContainView.bounds.size.width*0.5, peripheralContainView.bounds.size.height*0.5);
+        if ([_blueToothArrayM count]==1) {
+            _deviceScan.bounds = CGRectMake(0, 0, 280, 139.5);
+        }else{
+            _deviceScan.bounds = CGRectMake(0, 0, 280, 180);
+        }
+        
+        [peripheralContainView addSubview:_deviceScan];
+        [_deviceScan refreshDataSource:_blueToothArrayM];
+        [UIView animateWithDuration:0.3 delay:0.0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+            [peripherlAlphaView setAlpha:0.5];
+            [_deviceScan setAlpha:1.0f];
+        } completion:^(BOOL finished) {
+            
+        }];
+
     }
 }
 - (void)didReceiveMemoryWarning {

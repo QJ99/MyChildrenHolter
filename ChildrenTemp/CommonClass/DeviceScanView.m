@@ -25,7 +25,13 @@ static NSString *ReuseIdentifier = @"cell";
 
 }
 -(void)refreshDataSource:(NSArray *)deviceArrayM{
+    [_dataSource removeAllObjects];
     [_dataSource addObjectsFromArray:deviceArrayM];
+    if ([_dataSource count]==1) {
+        _myTableView.scrollEnabled = NO;
+    }else{
+        _myTableView.scrollEnabled = YES;
+    }
     [_myTableView reloadData];
 }
 #pragma mark -tableViewDataSource
@@ -34,7 +40,10 @@ static NSString *ReuseIdentifier = @"cell";
 }
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     DeviceScanViewTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ReuseIdentifier];
-    cell.showTextLb.text = _dataSource[indexPath.row];
+//    CBPeripheral *peripheral = _dataSource[indexPath.row][hDevice];
+    
+    NSString *peripheralName = _dataSource[indexPath.row][hName];
+    cell.showTextLb.text = peripheralName;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }

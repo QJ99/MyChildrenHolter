@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		319EF8CF1AC2E5E8000B4C9A /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 319EF8CD1AC2E5E8000B4C9A /* SettingViewController.m */; };
+		319EF8D01AC2E5E8000B4C9A /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 319EF8CE1AC2E5E8000B4C9A /* SettingViewController.xib */; };
+		319EF8D51AC2E712000B4C9A /* KnowLedgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 319EF8D31AC2E712000B4C9A /* KnowLedgeViewController.m */; };
+		319EF8D61AC2E712000B4C9A /* KnowLedgeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 319EF8D41AC2E712000B4C9A /* KnowLedgeViewController.xib */; };
 		31BC19151AC047180074A1FD /* HomeLeftView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BC19141AC047180074A1FD /* HomeLeftView.m */; };
 		31BC19171AC0472C0074A1FD /* HomeLeftView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31BC19161AC0472C0074A1FD /* HomeLeftView.xib */; };
 		31BC19201AC056A90074A1FD /* HomeLeftViewCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BC191E1AC056A90074A1FD /* HomeLeftViewCellTableViewCell.m */; };
@@ -23,10 +27,6 @@
 		31E32C871AC1AC0D00E71DFD /* TempViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31E32C851AC1AC0D00E71DFD /* TempViewController.m */; };
 		31E32C881AC1AC0D00E71DFD /* TempViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31E32C861AC1AC0D00E71DFD /* TempViewController.xib */; };
 		31E32C8B1AC1AEE300E71DFD /* CommonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31E32C8A1AC1AEE300E71DFD /* CommonController.m */; };
-		93C8B14B1AC2473B00D9D442 /* KnowLedgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C8B1491AC2473B00D9D442 /* KnowLedgeViewController.m */; };
-		93C8B14C1AC2473B00D9D442 /* KnowLedgeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93C8B14A1AC2473B00D9D442 /* KnowLedgeViewController.xib */; };
-		93C8B1501AC247D600D9D442 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C8B14E1AC247D500D9D442 /* SettingViewController.m */; };
-		93C8B1511AC247D600D9D442 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93C8B14F1AC247D600D9D442 /* SettingViewController.xib */; };
 		93C8B1551AC2482300D9D442 /* RemindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C8B1531AC2482300D9D442 /* RemindViewController.m */; };
 		93C8B1561AC2482300D9D442 /* RemindViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93C8B1541AC2482300D9D442 /* RemindViewController.xib */; };
 		93C8B15B1AC24D1700D9D442 /* UserCentryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C8B1591AC24D1700D9D442 /* UserCentryViewController.m */; };
@@ -97,6 +97,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		319EF8CC1AC2E5E8000B4C9A /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		319EF8CD1AC2E5E8000B4C9A /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		319EF8CE1AC2E5E8000B4C9A /* SettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
+		319EF8D21AC2E712000B4C9A /* KnowLedgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KnowLedgeViewController.h; sourceTree = "<group>"; };
+		319EF8D31AC2E712000B4C9A /* KnowLedgeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KnowLedgeViewController.m; sourceTree = "<group>"; };
+		319EF8D41AC2E712000B4C9A /* KnowLedgeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KnowLedgeViewController.xib; sourceTree = "<group>"; };
 		31BC19131AC047180074A1FD /* HomeLeftView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeLeftView.h; sourceTree = "<group>"; };
 		31BC19141AC047180074A1FD /* HomeLeftView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeLeftView.m; sourceTree = "<group>"; };
 		31BC19161AC0472C0074A1FD /* HomeLeftView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeLeftView.xib; sourceTree = "<group>"; };
@@ -124,12 +130,6 @@
 		31E32C8A1AC1AEE300E71DFD /* CommonController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonController.m; sourceTree = "<group>"; };
 		93678FFC1A7F228600AF134C /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		936790011A7F263500AF134C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		93C8B1481AC2473B00D9D442 /* KnowLedgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KnowLedgeViewController.h; path = ../../../../../../../Documents/KnowLedgeViewController.h; sourceTree = "<group>"; };
-		93C8B1491AC2473B00D9D442 /* KnowLedgeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KnowLedgeViewController.m; path = ../../../../../../../Documents/KnowLedgeViewController.m; sourceTree = "<group>"; };
-		93C8B14A1AC2473B00D9D442 /* KnowLedgeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = KnowLedgeViewController.xib; path = ../../../../../../../Documents/KnowLedgeViewController.xib; sourceTree = "<group>"; };
-		93C8B14D1AC247D500D9D442 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingViewController.h; path = ../../../../../../../Documents/SettingViewController.h; sourceTree = "<group>"; };
-		93C8B14E1AC247D500D9D442 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingViewController.m; path = ../../../../../../../Documents/SettingViewController.m; sourceTree = "<group>"; };
-		93C8B14F1AC247D600D9D442 /* SettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SettingViewController.xib; path = ../../../../../../../Documents/SettingViewController.xib; sourceTree = "<group>"; };
 		93C8B1521AC2482300D9D442 /* RemindViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemindViewController.h; sourceTree = "<group>"; };
 		93C8B1531AC2482300D9D442 /* RemindViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemindViewController.m; sourceTree = "<group>"; };
 		93C8B1541AC2482300D9D442 /* RemindViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RemindViewController.xib; sourceTree = "<group>"; };
@@ -261,14 +261,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		319EF8CB1AC2E5CD000B4C9A /* SettingController */ = {
+			isa = PBXGroup;
+			children = (
+				319EF8CC1AC2E5E8000B4C9A /* SettingViewController.h */,
+				319EF8CD1AC2E5E8000B4C9A /* SettingViewController.m */,
+				319EF8CE1AC2E5E8000B4C9A /* SettingViewController.xib */,
+			);
+			path = SettingController;
+			sourceTree = "<group>";
+		};
+		319EF8D11AC2E6F1000B4C9A /* KnowLedgeController */ = {
+			isa = PBXGroup;
+			children = (
+				319EF8D21AC2E712000B4C9A /* KnowLedgeViewController.h */,
+				319EF8D31AC2E712000B4C9A /* KnowLedgeViewController.m */,
+				319EF8D41AC2E712000B4C9A /* KnowLedgeViewController.xib */,
+			);
+			path = KnowLedgeController;
+			sourceTree = "<group>";
+		};
 		31BC190B1AC046E90074A1FD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				319EF8D11AC2E6F1000B4C9A /* KnowLedgeController */,
+				319EF8CB1AC2E5CD000B4C9A /* SettingController */,
 				93C8B15D1AC2557000D9D442 /* ConnectController */,
 				93C8B1571AC24CF700D9D442 /* UserCentryController */,
-				93C8B1451AC2470400D9D442 /* KnowLedgeController */,
 				93C8B1461AC2470400D9D442 /* RemindController */,
-				93C8B1471AC2470400D9D442 /* SettingController */,
 				31E32C6B1AC1ABB800E71DFD /* ColothController */,
 				31E32C6C1AC1ABB800E71DFD /* EnvironController */,
 				31E32C6D1AC1ABB900E71DFD /* HomeController */,
@@ -352,16 +372,6 @@
 			path = TempController;
 			sourceTree = "<group>";
 		};
-		93C8B1451AC2470400D9D442 /* KnowLedgeController */ = {
-			isa = PBXGroup;
-			children = (
-				93C8B1481AC2473B00D9D442 /* KnowLedgeViewController.h */,
-				93C8B1491AC2473B00D9D442 /* KnowLedgeViewController.m */,
-				93C8B14A1AC2473B00D9D442 /* KnowLedgeViewController.xib */,
-			);
-			path = KnowLedgeController;
-			sourceTree = "<group>";
-		};
 		93C8B1461AC2470400D9D442 /* RemindController */ = {
 			isa = PBXGroup;
 			children = (
@@ -370,16 +380,6 @@
 				93C8B1541AC2482300D9D442 /* RemindViewController.xib */,
 			);
 			path = RemindController;
-			sourceTree = "<group>";
-		};
-		93C8B1471AC2470400D9D442 /* SettingController */ = {
-			isa = PBXGroup;
-			children = (
-				93C8B14D1AC247D500D9D442 /* SettingViewController.h */,
-				93C8B14E1AC247D500D9D442 /* SettingViewController.m */,
-				93C8B14F1AC247D600D9D442 /* SettingViewController.xib */,
-			);
-			path = SettingController;
 			sourceTree = "<group>";
 		};
 		93C8B1571AC24CF700D9D442 /* UserCentryController */ = {
@@ -782,14 +782,14 @@
 				31BC19211AC056A90074A1FD /* HomeLeftViewCellTableViewCell.xib in Resources */,
 				93E12FD31A79FB65002DEF43 /* Images.xcassets in Resources */,
 				31E32C7E1AC1ABED00E71DFD /* ColothingViewController.xib in Resources */,
+				319EF8D01AC2E5E8000B4C9A /* SettingViewController.xib in Resources */,
 				93C8B1751AC2A69D00D9D442 /* DeviceScanView.xib in Resources */,
 				93C8B17A1AC2B3A200D9D442 /* DeviceScanViewTableViewCell.xib in Resources */,
 				93C8B1561AC2482300D9D442 /* RemindViewController.xib in Resources */,
+				319EF8D61AC2E712000B4C9A /* KnowLedgeViewController.xib in Resources */,
 				31E32C831AC1ABFC00E71DFD /* EnvironViewController.xib in Resources */,
 				31E32C881AC1AC0D00E71DFD /* TempViewController.xib in Resources */,
-				93C8B14C1AC2473B00D9D442 /* KnowLedgeViewController.xib in Resources */,
 				93DED2AC1A81B78600CBEB40 /* RegisterViewController.xib in Resources */,
-				93C8B1511AC247D600D9D442 /* SettingViewController.xib in Resources */,
 				31E32C791AC1ABB900E71DFD /* MainViewController.xib in Resources */,
 				93D636391ABA9BB0007CFDE1 /* LogInViewController.xib in Resources */,
 				31BC19171AC0472C0074A1FD /* HomeLeftView.xib in Resources */,
@@ -826,7 +826,6 @@
 				31BC19151AC047180074A1FD /* HomeLeftView.m in Sources */,
 				93C8B15B1AC24D1700D9D442 /* UserCentryViewController.m in Sources */,
 				93D6363F1ABA9E8E007CFDE1 /* LoginInfor.m in Sources */,
-				93C8B1501AC247D600D9D442 /* SettingViewController.m in Sources */,
 				93DED3161A81EB1B00CBEB40 /* UIProgressView+AFNetworking.m in Sources */,
 				93DED2F61A81EB1200CBEB40 /* AFHTTPRequestOperation.m in Sources */,
 				93D6362D1ABA77CE007CFDE1 /* NSObject+MJIvar.m in Sources */,
@@ -838,6 +837,7 @@
 				93D636281ABA77CE007CFDE1 /* MJConst.m in Sources */,
 				93C8B1731AC2A69200D9D442 /* DeviceScanView.m in Sources */,
 				93D636381ABA9BB0007CFDE1 /* LogInViewController.m in Sources */,
+				319EF8D51AC2E712000B4C9A /* KnowLedgeViewController.m in Sources */,
 				93D69F641AA58AC0006938FE /* TMDiskCache.m in Sources */,
 				93D6362A1ABA77CE007CFDE1 /* MJIvar.m in Sources */,
 				93DED3131A81EB1B00CBEB40 /* UIAlertView+AFNetworking.m in Sources */,
@@ -870,8 +870,8 @@
 				31BC19241AC059710074A1FD /* LeftTableModel.m in Sources */,
 				93DED2FD1A81EB1200CBEB40 /* AFURLResponseSerialization.m in Sources */,
 				93DED2AB1A81B78600CBEB40 /* RegisterViewController.m in Sources */,
+				319EF8CF1AC2E5E8000B4C9A /* SettingViewController.m in Sources */,
 				93D69F581AA562D7006938FE /* UserInfoModel.m in Sources */,
-				93C8B14B1AC2473B00D9D442 /* KnowLedgeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
