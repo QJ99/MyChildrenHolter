@@ -17,11 +17,11 @@
 #import "SettingViewController.h"
 #import "RemindViewController.h"
 #import "UserCentryViewController.h"
+#import "ConnectViewController.h"
 #define kdisRight 70
 @interface HomeViewController ()<CommonViewDelegate,homeLeftDelegate>
 @property (strong, nonatomic) MyNavgationViewController *myNav;
 @end
-
 @implementation HomeViewController
 
 - (void)viewDidLoad {
@@ -36,7 +36,10 @@
     
     MainViewController *main = [[MainViewController alloc]init];
     [main setDelegate:self];
-    _myNav = [[MyNavgationViewController alloc]initWithRootViewController:main];
+    
+    ConnectViewController *connect = [[ConnectViewController alloc]init];
+    _myNav = [[MyNavgationViewController alloc]initWithRootViewController:connect];
+    [connect setDelegate:self];
     [_myNav.view setTranslatesAutoresizingMaskIntoConstraints:NO];
     _myNav.view.frame = self.view.bounds;
     [self.view addSubview:_myNav.view];
@@ -71,7 +74,6 @@
         EnvironViewController *env = [[EnvironViewController alloc]initWithNibName:@"EnvironViewController" bundle:nil];
         [self switchRootViewController:env];
         [env setDelegate:self];
-        
         [self animationMove];
     }else if ([selelctItem isEqualToString:@"KnowLedgeViewController"]){
         KnowLedgeViewController *knowledge = [[KnowLedgeViewController alloc]initWithNibName:@"KnowLedgeViewController" bundle:nil];

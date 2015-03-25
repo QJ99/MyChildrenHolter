@@ -39,22 +39,12 @@
                         <constraint firstItem="58P-w1-sZQ" firstAttribute="top" secondItem="mRB-F9-Wv5" secondAttribute="top" constant="10" id="zE7-zZ-1Qt"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m6a-Gu-ZbK">
-                    <rect key="frame" x="35" y="159" width="250" height="250"/>
-                    <color key="backgroundColor" red="1" green="0.21973332840000001" blue="0.14656252610000001" alpha="1" colorSpace="calibratedRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="250" id="3MZ-9f-tyC"/>
-                        <constraint firstAttribute="width" constant="250" id="Uic-5X-YZu"/>
-                    </constraints>
-                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="mRB-F9-Wv5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4G2-ff-llM"/>
                 <constraint firstAttribute="trailing" secondItem="mRB-F9-Wv5" secondAttribute="trailing" id="K6G-Nt-Zex"/>
                 <constraint firstItem="mRB-F9-Wv5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="bHb-VF-amU"/>
-                <constraint firstAttribute="centerY" secondItem="m6a-Gu-ZbK" secondAttribute="centerY" id="mjf-C0-mFl"/>
-                <constraint firstAttribute="centerX" secondItem="m6a-Gu-ZbK" secondAttribute="centerX" id="zsm-fA-own"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>

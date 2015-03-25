@@ -11,9 +11,11 @@
 #import "HolterChildDataManager.h"
 #import "ChildHTTPSessionManager.h"
 #import "TMCache.h"
+#import "HolterChildBLEDataManager.h"
 #define HHM  ((ChildHTTPSessionManager*)[ChildHTTPSessionManager shareChildHTTPSessionManager])
 #define HDM  ((HolterChildDataManager*)[HolterChildDataManager sharedHolterChildDataManagerInstance])
 #define TMC  ((TMCache*)[TMCache sharedCache])
+#define HBM ((HolterChildBLEDataManager *)[HolterChildBLEDataManager sharedInstance])
 /**
  *  Data Http Request
  */
@@ -27,7 +29,7 @@
  */
 #define kUserInfor @"kUserInfor"
 //基类地址
-#define kHttpRequestPath @"http://test.tmholter.com/baby/index.php/Interface/"
+#define kHttpRequestPath @"http://www.tmholter.com/baby/index.php/Interface/"
 #define kcolorWithRGB(r,g,b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1.0]
 //日志输出宏定义
 #define MyLog(...) NSLog(__VA_ARGS__)

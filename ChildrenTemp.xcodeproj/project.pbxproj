@@ -31,6 +31,9 @@
 		93C8B1561AC2482300D9D442 /* RemindViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93C8B1541AC2482300D9D442 /* RemindViewController.xib */; };
 		93C8B15B1AC24D1700D9D442 /* UserCentryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C8B1591AC24D1700D9D442 /* UserCentryViewController.m */; };
 		93C8B15C1AC24D1700D9D442 /* UserCentryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93C8B15A1AC24D1700D9D442 /* UserCentryViewController.xib */; };
+		93C8B1611AC2558200D9D442 /* ConnectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C8B15F1AC2558200D9D442 /* ConnectViewController.m */; };
+		93C8B1621AC2558200D9D442 /* ConnectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93C8B1601AC2558200D9D442 /* ConnectViewController.xib */; };
+		93C8B1681AC2925500D9D442 /* HolterChildBLEDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C8B1671AC2925500D9D442 /* HolterChildBLEDataManager.m */; };
 		93D636281ABA77CE007CFDE1 /* MJConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D6361A1ABA77CE007CFDE1 /* MJConst.m */; };
 		93D636291ABA77CE007CFDE1 /* MJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D6361D1ABA77CE007CFDE1 /* MJFoundation.m */; };
 		93D6362A1ABA77CE007CFDE1 /* MJIvar.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D6361F1ABA77CE007CFDE1 /* MJIvar.m */; };
@@ -129,6 +132,11 @@
 		93C8B1581AC24D1700D9D442 /* UserCentryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserCentryViewController.h; sourceTree = "<group>"; };
 		93C8B1591AC24D1700D9D442 /* UserCentryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserCentryViewController.m; sourceTree = "<group>"; };
 		93C8B15A1AC24D1700D9D442 /* UserCentryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserCentryViewController.xib; sourceTree = "<group>"; };
+		93C8B15E1AC2558200D9D442 /* ConnectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectViewController.h; sourceTree = "<group>"; };
+		93C8B15F1AC2558200D9D442 /* ConnectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectViewController.m; sourceTree = "<group>"; };
+		93C8B1601AC2558200D9D442 /* ConnectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConnectViewController.xib; sourceTree = "<group>"; };
+		93C8B1661AC2925500D9D442 /* HolterChildBLEDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HolterChildBLEDataManager.h; sourceTree = "<group>"; };
+		93C8B1671AC2925500D9D442 /* HolterChildBLEDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HolterChildBLEDataManager.m; sourceTree = "<group>"; };
 		93D636191ABA77CE007CFDE1 /* MJConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJConst.h; sourceTree = "<group>"; };
 		93D6361A1ABA77CE007CFDE1 /* MJConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJConst.m; sourceTree = "<group>"; };
 		93D6361B1ABA77CE007CFDE1 /* MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtension.h; sourceTree = "<group>"; };
@@ -246,6 +254,7 @@
 		31BC190B1AC046E90074A1FD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				93C8B15D1AC2557000D9D442 /* ConnectController */,
 				93C8B1571AC24CF700D9D442 /* UserCentryController */,
 				93C8B1451AC2470400D9D442 /* KnowLedgeController */,
 				93C8B1461AC2470400D9D442 /* RemindController */,
@@ -371,6 +380,16 @@
 				93C8B15A1AC24D1700D9D442 /* UserCentryViewController.xib */,
 			);
 			path = UserCentryController;
+			sourceTree = "<group>";
+		};
+		93C8B15D1AC2557000D9D442 /* ConnectController */ = {
+			isa = PBXGroup;
+			children = (
+				93C8B15E1AC2558200D9D442 /* ConnectViewController.h */,
+				93C8B15F1AC2558200D9D442 /* ConnectViewController.m */,
+				93C8B1601AC2558200D9D442 /* ConnectViewController.xib */,
+			);
+			path = ConnectController;
 			sourceTree = "<group>";
 		};
 		93D636181ABA77CE007CFDE1 /* MJExtension */ = {
@@ -526,6 +545,8 @@
 		93DED31B1A81ECE900CBEB40 /* DataManager */ = {
 			isa = PBXGroup;
 			children = (
+				93C8B1661AC2925500D9D442 /* HolterChildBLEDataManager.h */,
+				93C8B1671AC2925500D9D442 /* HolterChildBLEDataManager.m */,
 				93D69F491AA55AC0006938FE /* ChildHTTPSessionManager.h */,
 				93D69F4A1AA55AC0006938FE /* ChildHTTPSessionManager.m */,
 			);
@@ -754,6 +775,7 @@
 				31E32C791AC1ABB900E71DFD /* MainViewController.xib in Resources */,
 				93D636391ABA9BB0007CFDE1 /* LogInViewController.xib in Resources */,
 				31BC19171AC0472C0074A1FD /* HomeLeftView.xib in Resources */,
+				93C8B1621AC2558200D9D442 /* ConnectViewController.xib in Resources */,
 				93C8B15C1AC24D1700D9D442 /* UserCentryViewController.xib in Resources */,
 				31E32C771AC1ABB900E71DFD /* HomeViewController.xib in Resources */,
 			);
@@ -793,6 +815,7 @@
 				93D636321ABA9A9C007CFDE1 /* InforModel.m in Sources */,
 				93D69F651AA58AC0006938FE /* TMMemoryCache.m in Sources */,
 				31E32C871AC1AC0D00E71DFD /* TempViewController.m in Sources */,
+				93C8B1681AC2925500D9D442 /* HolterChildBLEDataManager.m in Sources */,
 				93E12FF51A79FD81002DEF43 /* AppDelegate.m in Sources */,
 				93D636281ABA77CE007CFDE1 /* MJConst.m in Sources */,
 				93D636381ABA9BB0007CFDE1 /* LogInViewController.m in Sources */,
@@ -816,6 +839,7 @@
 				93DED3121A81EB1B00CBEB40 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				93DED3111A81EB1B00CBEB40 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				93E12FFC1A79FDF3002DEF43 /* MyNavgationViewController.m in Sources */,
+				93C8B1611AC2558200D9D442 /* ConnectViewController.m in Sources */,
 				93DED2FA1A81EB1200CBEB40 /* AFSecurityPolicy.m in Sources */,
 				93D69F5B1AA56744006938FE /* HolterChildDataManager.m in Sources */,
 				93E12FC81A79FB65002DEF43 /* main.m in Sources */,
