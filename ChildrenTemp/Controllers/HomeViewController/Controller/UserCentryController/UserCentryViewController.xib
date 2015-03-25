@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TempViewController">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserCentryViewController">
             <connections>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -15,37 +15,40 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HQt-e3-oQn">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wbv-jQ-Py4">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="51G-me-vD0">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nlh-hv-cQn">
                             <rect key="frame" x="8" y="10" width="50" height="47"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="50" id="vHu-8s-iiR"/>
+                                <constraint firstAttribute="width" constant="50" id="6Zh-oC-3lH"/>
                             </constraints>
                             <state key="normal" image="common_menu">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
-                                <action selector="menuButtonClick:" destination="-1" eventType="touchUpInside" id="5c8-iS-gSg"/>
+                                <action selector="menuButtonClick:" destination="-1" eventType="touchUpInside" id="EzA-x3-Bhy"/>
                             </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" red="0.99215686270000003" green="0.42745098040000001" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="64" id="9V7-Q2-3Vk"/>
-                        <constraint firstItem="51G-me-vD0" firstAttribute="leading" secondItem="HQt-e3-oQn" secondAttribute="leading" constant="8" id="HCJ-FZ-mfV"/>
-                        <constraint firstAttribute="height" constant="64" id="MCA-ai-Sww"/>
-                        <constraint firstItem="51G-me-vD0" firstAttribute="top" secondItem="HQt-e3-oQn" secondAttribute="top" constant="10" id="RWj-xa-k2S"/>
-                        <constraint firstAttribute="bottom" secondItem="51G-me-vD0" secondAttribute="bottom" constant="7" id="nI0-EH-DfI"/>
+                        <constraint firstItem="nlh-hv-cQn" firstAttribute="leading" secondItem="Wbv-jQ-Py4" secondAttribute="leading" constant="8" id="3Fi-lr-k98"/>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="64" id="6P1-Vq-6sp"/>
+                        <constraint firstItem="nlh-hv-cQn" firstAttribute="top" secondItem="Wbv-jQ-Py4" secondAttribute="top" constant="10" id="9X3-Ks-Fni"/>
+                        <constraint firstAttribute="bottom" secondItem="nlh-hv-cQn" secondAttribute="bottom" constant="7" id="GDm-RK-uno"/>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="64" id="KdU-Ly-YhG"/>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="64" id="Q44-Ua-JeP"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="64" id="YsU-3T-j3P"/>
+                        <constraint firstAttribute="height" constant="64" id="ieP-uf-zgf"/>
                     </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="HQt-e3-oQn" secondAttribute="trailing" id="1Nk-lg-fd0"/>
-                <constraint firstItem="HQt-e3-oQn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="58j-Ea-1me"/>
-                <constraint firstItem="HQt-e3-oQn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="l7c-43-y9e"/>
+                <constraint firstItem="Wbv-jQ-Py4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Tgb-n7-rIo"/>
+                <constraint firstAttribute="trailing" secondItem="Wbv-jQ-Py4" secondAttribute="trailing" id="iAR-X1-w1h"/>
+                <constraint firstItem="Wbv-jQ-Py4" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="sb2-jJ-B7J"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>

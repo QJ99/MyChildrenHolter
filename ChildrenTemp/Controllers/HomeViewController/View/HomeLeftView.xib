@@ -11,12 +11,16 @@
             <rect key="frame" x="0.0" y="0.0" width="250" height="600"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1xZ-Ls-Rfg">
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1xZ-Ls-Rfg">
                     <rect key="frame" x="85" y="60" width="80" height="80"/>
+                    <gestureRecognizers/>
                     <constraints>
                         <constraint firstAttribute="height" constant="80" id="Q9B-CT-2FI"/>
                         <constraint firstAttribute="width" constant="80" id="mjX-3r-GbU"/>
                     </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="qMu-cA-Fm6" appends="YES" id="gmk-Fo-ih6"/>
+                    </connections>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Dk-k4-BEh">
                     <rect key="frame" x="8" y="148" width="234" height="40"/>
@@ -214,6 +218,11 @@
         <tapGestureRecognizer id="N36-f5-cSv">
             <connections>
                 <action selector="tapItemButton:" destination="ReI-j6-txv" id="4r6-ND-Aep"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="qMu-cA-Fm6">
+            <connections>
+                <action selector="TapuserCentry:" destination="ReI-j6-txv" id="it6-4X-0Gs"/>
             </connections>
         </tapGestureRecognizer>
     </objects>

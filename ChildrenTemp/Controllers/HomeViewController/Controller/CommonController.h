@@ -13,5 +13,4 @@
 @end
 @interface CommonController : BaseViewController
 @property(weak, nonatomic) id<CommonViewDelegate>delegate;
-- (IBAction)menuButtonClick:(UIButton *)sender;
 @end

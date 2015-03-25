@@ -13,6 +13,10 @@
 #import "TempViewController.h"
 #import "ColothingViewController.h"
 #import "EnvironViewController.h"
+#import "KnowLedgeViewController.h"
+#import "SettingViewController.h"
+#import "RemindViewController.h"
+#import "UserCentryViewController.h"
 #define kdisRight 70
 @interface HomeViewController ()<CommonViewDelegate,homeLeftDelegate>
 @property (strong, nonatomic) MyNavgationViewController *myNav;
@@ -42,7 +46,7 @@
     if (!_myNav) {
         _myNav = [[MyNavgationViewController alloc]initWithRootViewController:controller];
     }else{
-        [_myNav pushViewController:controller animated:YES];
+        [_myNav pushViewController:controller animated:NO];
     }
 }
 #pragma mark -cumter Delegate
@@ -54,7 +58,6 @@
 -(void)homeLeftView:(HomeLeftView *)leftView selectItem:(NSString *)selelctItem{
     if ([selelctItem isEqualToString:@"体温测量"]) {
         TempViewController *temp = [[TempViewController alloc]initWithNibName:@"TempViewController" bundle:nil];
-        
         [self switchRootViewController:temp];
         [temp setDelegate:self];
         [self animationMove];
@@ -70,13 +73,34 @@
         [env setDelegate:self];
         
         [self animationMove];
+    }else if ([selelctItem isEqualToString:@"KnowLedgeViewController"]){
+        KnowLedgeViewController *knowledge = [[KnowLedgeViewController alloc]initWithNibName:@"KnowLedgeViewController" bundle:nil];
+        [self switchRootViewController:knowledge];
+        [knowledge setDelegate:self];
+        [self animationMove];
+    }else if ([selelctItem isEqualToString:@"SettingViewController"]){
+        SettingViewController *setting = [[SettingViewController alloc]initWithNibName:@"SettingViewController" bundle:nil];
+        [self switchRootViewController:setting];
+        [setting setDelegate:self];
+        [self animationMove];
+    }else if ([selelctItem isEqualToString:@"RemindViewController"]){
+        RemindViewController *setting = [[RemindViewController alloc]initWithNibName:@"RemindViewController" bundle:nil];
+        [self switchRootViewController:setting];
+        [setting setDelegate:self];
+        [self animationMove];
+    }else if ([selelctItem isEqualToString:@"UserCentryViewController"]){
+        UserCentryViewController *user = [[UserCentryViewController alloc]initWithNibName:@"UserCentryViewController" bundle:nil];
+        [self switchRootViewController:user];
+        [user setDelegate:self];
+        [self animationMove];
     }
 }
 #pragma mark 动画平移
 -(void)animationMove{
     if (_myNav) {
         if (_myNav.view.frame.origin.x == 0) {
-            [UIView animateWithDuration:0.3 delay:0.0 options:UIViewAnimationOptionCurveEaseInOut animations:^{                CGRect rect = _myNav.view.frame;
+            [UIView animateWithDuration:0.3 delay:0.0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+                CGRect rect = _myNav.view.frame;
                 rect.origin.x = self.view.frame.size.width-70;
                 _myNav.view.frame = rect;
             } completion:^(BOOL finished) {

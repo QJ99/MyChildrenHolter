@@ -11,5 +11,6 @@ typedef void (^modelTodo)();
 @interface LeftTableModel : BaseModel
 @property(strong, nonatomic) NSString *titleName;
 @property(strong, nonatomic) NSString *iconName;
+@property(strong, nonatomic) NSString *pushName;
 @property(copy, nonatomic) modelTodo modelDo;
 @end

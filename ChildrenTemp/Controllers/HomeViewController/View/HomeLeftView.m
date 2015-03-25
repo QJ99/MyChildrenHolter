@@ -49,23 +49,32 @@ static NSString *CellReuseIdentifier = @"cell";
     LeftTableModel *model1 = [[LeftTableModel alloc]init];
     model1.titleName = @"知识";
     model1.iconName = @"left_side_knowledge";
-    model1.modelDo = ^(){
-    };
+//    model1.modelDo = ^(){
+//    };
+    model1.pushName = @"KnowLedgeViewController";
     
     LeftTableModel *model2 = [[LeftTableModel alloc]init];
     model2.titleName = @"设置";
     model2.iconName = @"left_side_setting";
-    model2.modelDo = ^(){
-    };
+//    model2.modelDo = ^(){
+//    };
+    model2.pushName = @"SettingViewController";
     
     LeftTableModel *model3 = [[LeftTableModel alloc]init];
     model3.titleName = @"服药提醒";
     model3.iconName = @"left_side_remind";
-    model3.modelDo = ^(){
-    };
+    model3.pushName = @"RemindViewController";
+//    model3.modelDo = ^(){
+//    };
     _dataSource = [NSMutableArray arrayWithObjects:model1,model2,model3, nil];
     [_myTableView registerNib:[UINib nibWithNibName:@"HomeLeftViewCellTableViewCell" bundle:nil] forCellReuseIdentifier:CellReuseIdentifier];
     [self tapItemButton:_tapTempBgView];
+}
+#pragma mark -点击进入用户中心
+- (IBAction)TapuserCentry:(UITapGestureRecognizer *)sender {
+    if ([_delegate respondsToSelector:@selector(homeLeftView:selectItem:)]) {
+        [_delegate homeLeftView:self selectItem:@"UserCentryViewController"];
+    }
 }
 #pragma mark -点击分类模块
 - (IBAction)tapItemButton:(UITapGestureRecognizer *)sender {
@@ -119,6 +128,12 @@ static NSString *CellReuseIdentifier = @"cell";
     
 }
 #pragma mark -tableviewDelegate
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    LeftTableModel *model = _dataSource[indexPath.row];
+    if ([_delegate respondsToSelector:@selector(homeLeftView:selectItem:)]) {
+        [_delegate homeLeftView:self selectItem:model.pushName];
+    }
+}
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 50.0f;
 }

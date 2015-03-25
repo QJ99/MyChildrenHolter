@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EnvironViewController">
@@ -19,19 +19,35 @@
                     <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vSu-c8-gXw">
-                            <rect key="frame" x="8" y="7" width="60" height="50"/>
+                            <rect key="frame" x="8" y="10" width="50" height="47"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="60" id="PMf-mB-QOY"/>
+                                <constraint firstAttribute="width" constant="50" id="PMf-mB-QOY"/>
                             </constraints>
                             <state key="normal" image="common_menu">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="menuButtonClick:" destination="-1" eventType="touchUpInside" id="bG0-2i-8nd"/>
+                            </connections>
                         </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="环境温湿度" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W0Q-MA-xmb">
+                            <rect key="frame" x="77" y="20" width="166" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="WeE-FW-OcM"/>
+                                <constraint firstAttribute="height" constant="30" id="wCv-9L-0RR"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                     </subviews>
                     <color key="backgroundColor" red="0.99215686270000003" green="0.42745098040000001" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstItem="vSu-c8-gXw" firstAttribute="top" secondItem="1NB-C9-VIL" secondAttribute="top" constant="7" id="2dc-9G-Pq1"/>
+                        <constraint firstItem="vSu-c8-gXw" firstAttribute="top" secondItem="1NB-C9-VIL" secondAttribute="top" constant="10" id="2dc-9G-Pq1"/>
+                        <constraint firstItem="W0Q-MA-xmb" firstAttribute="top" secondItem="1NB-C9-VIL" secondAttribute="top" constant="20" id="LJm-Hn-ev9"/>
                         <constraint firstAttribute="bottom" secondItem="vSu-c8-gXw" secondAttribute="bottom" constant="7" id="NXF-Tf-qf7"/>
+                        <constraint firstAttribute="trailing" secondItem="W0Q-MA-xmb" secondAttribute="trailing" constant="77" id="Swy-QT-HUu"/>
+                        <constraint firstItem="W0Q-MA-xmb" firstAttribute="leading" secondItem="vSu-c8-gXw" secondAttribute="trailing" constant="19" id="WMH-yv-1Bd"/>
                         <constraint firstItem="vSu-c8-gXw" firstAttribute="leading" secondItem="1NB-C9-VIL" secondAttribute="leading" constant="8" id="YXq-jg-Xo5"/>
                         <constraint firstAttribute="height" constant="64" id="bun-E2-eYF"/>
                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="64" id="qm4-04-kSO"/>
