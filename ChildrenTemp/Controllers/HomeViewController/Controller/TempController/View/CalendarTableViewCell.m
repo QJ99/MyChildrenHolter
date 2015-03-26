@@ -9,9 +9,10 @@
 #import "CalendarTableViewCell.h"
 
 @implementation CalendarTableViewCell
-
 - (void)awakeFromNib {
     // Initialization code
+    [_calendarDayText setBackgroundColor:[UIColor clearColor]];
+//    [_calendarDayText setTextColor:kUIColorFromRGB(0xa28f86)];
     [_calendarDayText setTextColor:[UIColor whiteColor]];
     [_calendarDayText setTextAlignment:NSTextAlignmentCenter];
 }

@@ -17,9 +17,7 @@
 @property (weak, nonatomic) UIView *peripheralContainView;
 @property (weak, nonatomic) UIView *peripheralAlphaView;
 @end
-
 @implementation ConnectViewController
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
@@ -121,7 +119,6 @@
         } completion:^(BOOL finished) {
             
         }];
-
     }
 }
 #pragma mark -deviceDelegte
