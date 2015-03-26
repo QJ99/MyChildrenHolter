@@ -83,28 +83,30 @@ static NSString *CellReuseIdentifier = @"cell";
         UIImage *imageS = [UIImage imageNamed:@"temp_selected"];
         if ([_temputerImageView.image isEqual:imageN] ) {
             [_temputerImageView setImage:imageS];
-            [_clothingImageView setImage:[UIImage imageNamed:@"climate_unselected"]];
-            [_environmentImageView setImage:[UIImage imageNamed:@"huanjing_unselected"]];
-            [self tellDelegateSelectItem:@"体温测量"];
         }
+        [_clothingImageView setImage:[UIImage imageNamed:@"climate_unselected"]];
+        [_environmentImageView setImage:[UIImage imageNamed:@"huanjing_unselected"]];
+        [self tellDelegateSelectItem:@"体温测量"];
     }else if (sender.view.tag == 2){//衣内微气候
         UIImage *imageN = [UIImage imageNamed:@"climate_unselected"];
         UIImage *imageS = [UIImage imageNamed:@"climate_selected"];
         if ([_clothingImageView.image isEqual:imageN]) {
             [_clothingImageView setImage:imageS];
-            [_temputerImageView setImage:[UIImage imageNamed:@"temp_unselected"]];
-            [_environmentImageView setImage:[UIImage imageNamed:@"huanjing_unselected"]];
-            [self tellDelegateSelectItem:@"衣内微气候"];
+
         }
+        [_temputerImageView setImage:[UIImage imageNamed:@"temp_unselected"]];
+        [_environmentImageView setImage:[UIImage imageNamed:@"huanjing_unselected"]];
+        [self tellDelegateSelectItem:@"衣内微气候"];
     }else if (sender.view.tag == 3){//环境温湿度
         UIImage *imageN = [UIImage imageNamed:@"huanjing_unselected"];
         UIImage *imageS = [UIImage imageNamed:@"huanjing_selected"];
         if ([_environmentImageView.image isEqual:imageN]) {
             [_environmentImageView setImage:imageS];
-            [_clothingImageView setImage:[UIImage imageNamed:@"climate_unselected"]];
-            [_temputerImageView setImage:[UIImage imageNamed:@"temp_unselected"]];
-            [self tellDelegateSelectItem:@"环境温湿度"];
+
         }
+        [_clothingImageView setImage:[UIImage imageNamed:@"climate_unselected"]];
+        [_temputerImageView setImage:[UIImage imageNamed:@"temp_unselected"]];
+        [self tellDelegateSelectItem:@"环境温湿度"];
     }
 }
 #pragma mark -通知代理

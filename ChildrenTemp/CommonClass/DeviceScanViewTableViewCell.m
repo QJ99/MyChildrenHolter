@@ -7,13 +7,21 @@
 //
 
 #import "DeviceScanViewTableViewCell.h"
+@interface DeviceScanViewTableViewCell()
 
+@end
 @implementation DeviceScanViewTableViewCell
 
 - (void)awakeFromNib {
     // Initialization code
+    _statusImageView.layer.cornerRadius = _statusImageView.frame.size.width *0.5;
+    _statusImageView.layer.masksToBounds = YES;
+    [_statusImageView setBackgroundColor:[UIColor clearColor]];
+    [_statusImageView setContentMode:UIViewContentModeScaleAspectFit];
 }
-
+- (void)resetStatus:(BOOL)normal{
+    [_statusImageView setImage:[UIImage imageNamed:(normal ? @"DeviceScanHover" : @"DeviceScanNormal")]];
+}
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
 

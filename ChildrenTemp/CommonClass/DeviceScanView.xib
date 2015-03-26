@@ -36,17 +36,17 @@
                     </connections>
                 </tableView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7ih-rd-UA7">
-                    <rect key="frame" x="0.0" y="138" width="280" height="1"/>
+                    <rect key="frame" x="0.0" y="135" width="280" height="1"/>
                     <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="1" id="ht3-Fz-NWA"/>
                     </constraints>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z0v-qm-Ajc">
-                    <rect key="frame" x="139" y="138" width="1" height="42"/>
+                    <rect key="frame" x="139" y="135" width="1" height="45"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="42" id="MCF-Wu-k9i"/>
+                        <constraint firstAttribute="height" constant="45" id="MCF-Wu-k9i"/>
                     </constraints>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1l9-RM-LVB">
@@ -88,7 +88,7 @@
                 <constraint firstItem="1l9-RM-LVB" firstAttribute="top" secondItem="agk-To-iyg" secondAttribute="bottom" constant="8" id="Gtd-Vz-2W6"/>
                 <constraint firstItem="agk-To-iyg" firstAttribute="leading" secondItem="LHB-WU-pIi" secondAttribute="leading" id="MKe-2c-0eu"/>
                 <constraint firstItem="V4y-7x-C5Q" firstAttribute="top" secondItem="BT1-ls-ABh" secondAttribute="bottom" constant="1" id="NYs-UA-Hgm"/>
-                <constraint firstItem="LPR-2y-klt" firstAttribute="top" secondItem="7ih-rd-UA7" secondAttribute="bottom" constant="4" id="Nsi-Wj-EMK"/>
+                <constraint firstItem="LPR-2y-klt" firstAttribute="top" secondItem="7ih-rd-UA7" secondAttribute="bottom" constant="7" id="Nsi-Wj-EMK"/>
                 <constraint firstAttribute="trailing" secondItem="agk-To-iyg" secondAttribute="trailing" id="RQZ-dx-szF"/>
                 <constraint firstItem="LPR-2y-klt" firstAttribute="top" secondItem="agk-To-iyg" secondAttribute="bottom" constant="8" id="Xo5-6f-WJM"/>
                 <constraint firstAttribute="trailing" secondItem="BT1-ls-ABh" secondAttribute="trailing" constant="8" id="Xv1-w1-xfP"/>

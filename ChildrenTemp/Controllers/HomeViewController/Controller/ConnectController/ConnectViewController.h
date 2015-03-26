@@ -7,7 +7,11 @@
 //
 
 #import "CommonController.h"
-
+@class ConnectViewController;
+@protocol connectviewDelegate<NSObject,CommonViewDelegate>
+-(void)connectview:(ConnectViewController*)connect pushController:(BOOL)push;
+@end
 @interface ConnectViewController : CommonController
-
+@property (weak, nonatomic)id<connectviewDelegate> connectDelegate;
+@property (strong, nonatomic) NSString *title;
 @end

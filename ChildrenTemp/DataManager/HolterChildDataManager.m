@@ -23,6 +23,23 @@ static HolterChildDataManager *_instace;
     });
     return _instace;
 }
+static HomeViewController *staticHome = nil;
+static dispatch_once_t onceToken;
+- (HomeViewController *)homeVC{
+    dispatch_once(&onceToken, ^{
+        staticHome = [[HomeViewController alloc] initWithNibName:@"HomeViewController" bundle:nil];
+    });
+    return staticHome;
+}
+
+- (void)resetNilHomeVC{
+    staticHome = nil;
+    onceToken = 0;
+}
+
+-(void)homeAnimateShowLeftSide:(BOOL)animation{
+    [HDM.homeVC animationMove];
+}
 - (void)popHlintMsg:(NSString *)message{
     if (!message) {
         return;

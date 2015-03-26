@@ -8,12 +8,15 @@
 
 #import "ConnectViewController.h"
 #import "DeviceScanView.h"
-@interface ConnectViewController ()
+#import "MainViewController.h"
+@interface ConnectViewController ()<deviceDelegate>
 @property (weak, nonatomic) IBOutlet UIView *bottomView;
 @property (weak, nonatomic) IBOutlet UIView *middleView;
 @property (weak, nonatomic) IBOutlet UIButton *connectButton;
 @property (strong, nonatomic) NSMutableArray *blueToothArrayM;
 @property (strong, nonatomic) DeviceScanView *deviceScan;
+@property (weak, nonatomic) UIView *peripheralContainView;
+@property (weak, nonatomic) UIView *peripheralAlphaView;
 @end
 
 @implementation ConnectViewController
@@ -22,10 +25,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     [self buildUI];
-//    DeviceScanView *device = [DeviceScanView loadDeviceScan];
-//    device.frame = CGRectMake(20, 100, 280, 130);
-//    [self.view addSubview:device];
-//    [self.view setBackgroundColor:[UIColor darkGrayColor]];
 }
 #pragma mark -界面搭建
 -(void)buildUI{
@@ -57,8 +56,8 @@
                     [_blueToothArrayM removeAllObjects];
                     [_blueToothArrayM addObjectsFromArray:peripheralDicArr];
                 }
-                [[self class]cancelPreviousPerformRequestsWithTarget:self selector:@selector(selectedBlueTooth) object:nil];
                 if (peripheralDicArr.count == 1) {
+                    [[self class]cancelPreviousPerformRequestsWithTarget:self selector:@selector(selectedBlueTooth) object:nil];
                     [self performSelector:@selector(selectedBlueTooth) withObject:nil afterDelay:5.0];
                 }
             }];
@@ -98,19 +97,21 @@
         UIWindow *keywindow = [UIApplication sharedApplication].keyWindow;
         UIView *peripheralContainView = [[UIView alloc]initWithFrame:keywindow.bounds];
         [peripheralContainView setBackgroundColor:[UIColor clearColor]];
+        _peripheralContainView = peripheralContainView;
         [keywindow addSubview:peripheralContainView];
         
         UIView *peripherlAlphaView = [[UIView alloc]initWithFrame:peripheralContainView.bounds];
+        _peripheralAlphaView = peripherlAlphaView;
         [peripherlAlphaView setBackgroundColor:[UIColor blackColor]];
         [peripherlAlphaView setAlpha:0.0];
         [peripheralContainView addSubview:peripherlAlphaView];
-        
         _deviceScan = [DeviceScanView loadDeviceScan];
+        [_deviceScan setDelegate:self];
         _deviceScan.center = CGPointMake(peripheralContainView.bounds.size.width*0.5, peripheralContainView.bounds.size.height*0.5);
         if ([_blueToothArrayM count]==1) {
             _deviceScan.bounds = CGRectMake(0, 0, 280, 139.5);
         }else{
-            _deviceScan.bounds = CGRectMake(0, 0, 280, 180);
+            _deviceScan.bounds = CGRectMake(0, 0, 280, 190);
         }
         
         [peripheralContainView addSubview:_deviceScan];
@@ -122,6 +123,61 @@
             
         }];
 
+    }
+}
+#pragma mark -deviceDelegte
+-(void)deviceScanview:(DeviceScanView *)scanview didSelectIndex:(NSInteger)index{
+    [self stopScanPeripheral:nil];
+    [_connectButton setTitle:@"设备连接中..." forState:UIControlStateNormal];
+    [self peripheralState:index];
+}
+-(void)deviceScanview:(DeviceScanView *)scanview didSelectCancle:(BOOL)cancle{
+    if (cancle) {
+        [self stopScanPeripheral:nil];
+        [_connectButton setTitle:@"连接设备" forState:UIControlStateNormal];
+    }
+}
+- (void)peripheralState:(int)index{
+    [HBM connectPeripheral:index doneBlock:^(CBPeripheral *peripheral) {
+        if (peripheral) {
+            switch (peripheral.state) {
+                case CBPeripheralStateDisconnected:{
+                }
+                    break;
+                case CBPeripheralStateConnecting:{
+                    
+                }
+                    break;
+                case CBPeripheralStateConnected:{
+//                    MainViewController *main = [[MainViewController alloc]initWithNibName:@"MainViewController" bundle:nil];
+//                    [self.navigationController pushViewController:main animated:YES];
+                    if ([_connectDelegate respondsToSelector:@selector(connectview:pushController:)]) {
+                        [_connectDelegate connectview:self pushController:YES];
+                        
+                    }
+                    
+                }
+                    break;
+                default:
+                    break;
+            }
+        }else{
+        }
+    }];
+}
+
+- (void)stopScanPeripheral:(id)sender{
+    if (_peripheralContainView) {
+        [UIView animateWithDuration:0.3 delay:0.0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+            [_peripheralAlphaView setAlpha:0.0f];
+            [_deviceScan setAlpha:0.0f];
+        } completion:^(BOOL finished) {
+            [_deviceScan removeFromSuperview];
+            _deviceScan = nil;
+            [_peripheralContainView removeFromSuperview];
+            _peripheralContainView = nil;
+            [HBM stopScanPeripheral];
+        }];
     }
 }
 - (void)didReceiveMemoryWarning {

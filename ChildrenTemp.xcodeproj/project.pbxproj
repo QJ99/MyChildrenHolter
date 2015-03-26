@@ -54,10 +54,10 @@
 		93D69F521AA5621D006938FE /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D69F511AA5621D006938FE /* BaseModel.m */; };
 		93D69F551AA56249006938FE /* StatusInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D69F541AA56249006938FE /* StatusInfoModel.m */; };
 		93D69F581AA562D7006938FE /* UserInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D69F571AA562D7006938FE /* UserInfoModel.m */; };
-		93D69F5B1AA56744006938FE /* HolterChildDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D69F5A1AA56744006938FE /* HolterChildDataManager.m */; };
 		93D69F631AA58AC0006938FE /* TMCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D69F5E1AA58AC0006938FE /* TMCache.m */; };
 		93D69F641AA58AC0006938FE /* TMDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D69F601AA58AC0006938FE /* TMDiskCache.m */; };
 		93D69F651AA58AC0006938FE /* TMMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D69F621AA58AC0006938FE /* TMMemoryCache.m */; };
+		93DEA17E1AC3E6D5000F87F1 /* HolterChildDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DEA17D1AC3E6D5000F87F1 /* HolterChildDataManager.m */; };
 		93DED2A71A81B71800CBEB40 /* MyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DED2A61A81B71800CBEB40 /* MyButton.m */; };
 		93DED2AB1A81B78600CBEB40 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DED2A91A81B78600CBEB40 /* RegisterViewController.m */; };
 		93DED2AC1A81B78600CBEB40 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93DED2AA1A81B78600CBEB40 /* RegisterViewController.xib */; };
@@ -179,14 +179,14 @@
 		93D69F541AA56249006938FE /* StatusInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusInfoModel.m; sourceTree = "<group>"; };
 		93D69F561AA562D7006938FE /* UserInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoModel.h; sourceTree = "<group>"; };
 		93D69F571AA562D7006938FE /* UserInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoModel.m; sourceTree = "<group>"; };
-		93D69F591AA56744006938FE /* HolterChildDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HolterChildDataManager.h; sourceTree = "<group>"; };
-		93D69F5A1AA56744006938FE /* HolterChildDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HolterChildDataManager.m; sourceTree = "<group>"; };
 		93D69F5D1AA58AC0006938FE /* TMCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMCache.h; sourceTree = "<group>"; };
 		93D69F5E1AA58AC0006938FE /* TMCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMCache.m; sourceTree = "<group>"; };
 		93D69F5F1AA58AC0006938FE /* TMDiskCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMDiskCache.h; sourceTree = "<group>"; };
 		93D69F601AA58AC0006938FE /* TMDiskCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMDiskCache.m; sourceTree = "<group>"; };
 		93D69F611AA58AC0006938FE /* TMMemoryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMMemoryCache.h; sourceTree = "<group>"; };
 		93D69F621AA58AC0006938FE /* TMMemoryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMMemoryCache.m; sourceTree = "<group>"; };
+		93DEA17C1AC3E6D5000F87F1 /* HolterChildDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HolterChildDataManager.h; sourceTree = "<group>"; };
+		93DEA17D1AC3E6D5000F87F1 /* HolterChildDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HolterChildDataManager.m; sourceTree = "<group>"; };
 		93DED2A51A81B71800CBEB40 /* MyButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyButton.h; sourceTree = "<group>"; };
 		93DED2A61A81B71800CBEB40 /* MyButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyButton.m; sourceTree = "<group>"; };
 		93DED2A81A81B78600CBEB40 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
@@ -463,8 +463,6 @@
 				93D69F541AA56249006938FE /* StatusInfoModel.m */,
 				93D69F561AA562D7006938FE /* UserInfoModel.h */,
 				93D69F571AA562D7006938FE /* UserInfoModel.m */,
-				93D69F591AA56744006938FE /* HolterChildDataManager.h */,
-				93D69F5A1AA56744006938FE /* HolterChildDataManager.m */,
 			);
 			path = BaseClass;
 			sourceTree = "<group>";
@@ -561,6 +559,8 @@
 		93DED31B1A81ECE900CBEB40 /* DataManager */ = {
 			isa = PBXGroup;
 			children = (
+				93DEA17C1AC3E6D5000F87F1 /* HolterChildDataManager.h */,
+				93DEA17D1AC3E6D5000F87F1 /* HolterChildDataManager.m */,
 				93C8B1661AC2925500D9D442 /* HolterChildBLEDataManager.h */,
 				93C8B1671AC2925500D9D442 /* HolterChildBLEDataManager.m */,
 				93D69F491AA55AC0006938FE /* ChildHTTPSessionManager.h */,
@@ -835,6 +835,7 @@
 				93C8B1681AC2925500D9D442 /* HolterChildBLEDataManager.m in Sources */,
 				93E12FF51A79FD81002DEF43 /* AppDelegate.m in Sources */,
 				93D636281ABA77CE007CFDE1 /* MJConst.m in Sources */,
+				93DEA17E1AC3E6D5000F87F1 /* HolterChildDataManager.m in Sources */,
 				93C8B1731AC2A69200D9D442 /* DeviceScanView.m in Sources */,
 				93D636381ABA9BB0007CFDE1 /* LogInViewController.m in Sources */,
 				319EF8D51AC2E712000B4C9A /* KnowLedgeViewController.m in Sources */,
@@ -860,7 +861,6 @@
 				93E12FFC1A79FDF3002DEF43 /* MyNavgationViewController.m in Sources */,
 				93C8B1611AC2558200D9D442 /* ConnectViewController.m in Sources */,
 				93DED2FA1A81EB1200CBEB40 /* AFSecurityPolicy.m in Sources */,
-				93D69F5B1AA56744006938FE /* HolterChildDataManager.m in Sources */,
 				93E12FC81A79FB65002DEF43 /* main.m in Sources */,
 				93DED2FC1A81EB1200CBEB40 /* AFURLRequestSerialization.m in Sources */,
 				93C8B1791AC2B3A200D9D442 /* DeviceScanViewTableViewCell.m in Sources */,

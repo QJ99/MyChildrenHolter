@@ -7,8 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class DeviceScanView;
+@protocol deviceDelegate<NSObject>
+-(void)deviceScanview:(DeviceScanView*)scanview didSelectIndex:(NSInteger)index;
+-(void)deviceScanview:(DeviceScanView *)scanview didSelectCancle:(BOOL)cancle;
+@end
 @interface DeviceScanView : UIView
+@property(weak, nonatomic) id<deviceDelegate>delegate;
 +(DeviceScanView*)loadDeviceScan;
 -(void)refreshDataSource:(NSArray*)deviceArrayM;
 @end

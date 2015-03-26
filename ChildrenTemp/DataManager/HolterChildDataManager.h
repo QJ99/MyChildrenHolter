@@ -8,10 +8,14 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "HomeViewController.h"
+#import "BaseViewController.h"
 @interface HolterChildDataManager : NSObject
+@property (nonatomic, readonly) HomeViewController *homeVC;
 + (id)sharedHolterChildDataManagerInstance;
 - (void)popHlintMsg:(NSString *)message;
 - (void)errorPopMsg:(NSError *)error;
 -(BOOL)isEmail:(NSString *)email;
 -(BOOL)isPhoneNum:(NSString*)honeNum;
+- (void)homeAnimateShowLeftSide:(BOOL)animation;
 @end

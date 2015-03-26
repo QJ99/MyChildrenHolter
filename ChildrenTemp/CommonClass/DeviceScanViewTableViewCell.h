@@ -7,9 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
 @interface DeviceScanViewTableViewCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *showTextLb;
 @property (weak, nonatomic) IBOutlet UIImageView *statusImageView;
-
+- (void)resetStatus:(BOOL)normal;
 @end

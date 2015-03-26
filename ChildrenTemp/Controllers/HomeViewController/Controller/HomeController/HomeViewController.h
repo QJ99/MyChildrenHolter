@@ -9,5 +9,6 @@
 #import "BaseViewController.h"
 
 @interface HomeViewController : BaseViewController
-
+//-(void)switchRootViewController:(UIViewController*)controller;
+-(void)animationMove;
 @end

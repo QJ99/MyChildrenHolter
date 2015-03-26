@@ -19,11 +19,10 @@
 #import "UserCentryViewController.h"
 #import "ConnectViewController.h"
 #define kdisRight 70
-@interface HomeViewController ()<CommonViewDelegate,homeLeftDelegate>
+@interface HomeViewController ()<CommonViewDelegate,homeLeftDelegate,connectviewDelegate>
 @property (strong, nonatomic) MyNavgationViewController *myNav;
 @end
 @implementation HomeViewController
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
@@ -33,16 +32,18 @@
     [self.view addSubview:leftView];
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[leftView]-70-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(leftView)]];
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[leftView]-0-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(leftView)]];
-    
-    MainViewController *main = [[MainViewController alloc]init];
-    [main setDelegate:self];
-    
     ConnectViewController *connect = [[ConnectViewController alloc]init];
     _myNav = [[MyNavgationViewController alloc]initWithRootViewController:connect];
     [connect setDelegate:self];
-    [_myNav.view setTranslatesAutoresizingMaskIntoConstraints:NO];
+    [connect setConnectDelegate:(id<connectviewDelegate>)self];
     _myNav.view.frame = self.view.bounds;
     [self.view addSubview:_myNav.view];
+}
+#pragma mark connectViewDelegate
+-(void)connectview:(ConnectViewController *)connect pushController:(BOOL)push{
+    MainViewController *main = [[MainViewController alloc]initWithNibName:@"MainViewController" bundle:nil];
+    [main setDelegate:(id<CommonViewDelegate>)self];
+    [self switchRootViewController:main];
 }
 #pragma mark -切换控制器
 -(void)switchRootViewController:(UIViewController*)controller{
