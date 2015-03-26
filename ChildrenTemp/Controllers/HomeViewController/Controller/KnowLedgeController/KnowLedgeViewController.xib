@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KnowLedgeViewController">
@@ -19,9 +19,9 @@
                     <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zfp-5L-Kqi">
-                            <rect key="frame" x="8" y="10" width="50" height="47"/>
+                            <rect key="frame" x="8" y="20" width="40" height="37"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="50" id="hQY-Kn-boQ"/>
+                                <constraint firstAttribute="width" constant="40" id="hQY-Kn-boQ"/>
                             </constraints>
                             <state key="normal" image="common_menu">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -31,7 +31,7 @@
                             </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="设置" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pxY-Bp-NdH">
-                            <rect key="frame" x="77" y="20" width="166" height="30"/>
+                            <rect key="frame" x="67" y="20" width="176" height="30"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="30" id="7RR-zN-DfU"/>
                             </constraints>
@@ -44,7 +44,7 @@
                     <constraints>
                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="64" id="7zd-IT-0dW"/>
                         <constraint firstAttribute="height" relation="lessThanOrEqual" constant="64" id="CeI-L5-MLS"/>
-                        <constraint firstItem="Zfp-5L-Kqi" firstAttribute="top" secondItem="lZU-3a-bZd" secondAttribute="top" constant="10" id="Ixc-Co-cXd"/>
+                        <constraint firstItem="Zfp-5L-Kqi" firstAttribute="top" secondItem="lZU-3a-bZd" secondAttribute="top" constant="20" id="Ixc-Co-cXd"/>
                         <constraint firstItem="Zfp-5L-Kqi" firstAttribute="leading" secondItem="lZU-3a-bZd" secondAttribute="leading" constant="8" id="St1-se-xhr"/>
                         <constraint firstAttribute="height" relation="lessThanOrEqual" constant="64" id="TRW-xw-u5b"/>
                         <constraint firstItem="pxY-Bp-NdH" firstAttribute="top" secondItem="lZU-3a-bZd" secondAttribute="top" constant="20" id="ZVq-b5-R09"/>

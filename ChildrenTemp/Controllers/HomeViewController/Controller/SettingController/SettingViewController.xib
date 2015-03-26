@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingViewController">
@@ -19,9 +19,9 @@
                     <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VFi-I0-ZEA">
-                            <rect key="frame" x="8" y="10" width="50" height="47"/>
+                            <rect key="frame" x="8" y="20" width="40" height="37"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="50" id="Mwg-dd-3cq"/>
+                                <constraint firstAttribute="width" constant="40" id="Mwg-dd-3cq"/>
                             </constraints>
                             <state key="normal" image="common_menu">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -31,7 +31,7 @@
                             </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="设置" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hUx-bh-02K">
-                            <rect key="frame" x="77" y="20" width="166" height="30"/>
+                            <rect key="frame" x="67" y="20" width="176" height="30"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="30" id="aQn-wq-esk"/>
                             </constraints>
@@ -45,7 +45,7 @@
                         <constraint firstAttribute="bottom" secondItem="VFi-I0-ZEA" secondAttribute="bottom" constant="7" id="DTw-MQ-mjI"/>
                         <constraint firstItem="hUx-bh-02K" firstAttribute="leading" secondItem="VFi-I0-ZEA" secondAttribute="trailing" constant="19" id="YqX-xq-zgw"/>
                         <constraint firstItem="hUx-bh-02K" firstAttribute="top" secondItem="o2S-Xi-YuE" secondAttribute="top" constant="20" id="dNk-9D-z76"/>
-                        <constraint firstItem="VFi-I0-ZEA" firstAttribute="top" secondItem="o2S-Xi-YuE" secondAttribute="top" constant="10" id="fbT-DG-ctk"/>
+                        <constraint firstItem="VFi-I0-ZEA" firstAttribute="top" secondItem="o2S-Xi-YuE" secondAttribute="top" constant="20" id="fbT-DG-ctk"/>
                         <constraint firstAttribute="height" relation="lessThanOrEqual" constant="64" id="hH2-Qa-Cvv"/>
                         <constraint firstAttribute="height" relation="lessThanOrEqual" constant="64" id="jMO-p5-4je"/>
                         <constraint firstItem="VFi-I0-ZEA" firstAttribute="leading" secondItem="o2S-Xi-YuE" secondAttribute="leading" constant="8" id="m0Y-CS-wNM"/>

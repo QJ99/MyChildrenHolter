@@ -8,7 +8,6 @@
 
 #import "HomeViewController.h"
 #import "HomeLeftView.h"
-#import "MainViewController.h"
 #import "MyNavgationViewController.h"
 #import "TempViewController.h"
 #import "ColothingViewController.h"
@@ -41,7 +40,7 @@
 }
 #pragma mark connectViewDelegate
 -(void)connectview:(ConnectViewController *)connect pushController:(BOOL)push{
-    MainViewController *main = [[MainViewController alloc]initWithNibName:@"MainViewController" bundle:nil];
+    TempViewController *main = [[TempViewController alloc]initWithNibName:@"TempViewController" bundle:nil];
     [main setDelegate:(id<CommonViewDelegate>)self];
     [self switchRootViewController:main];
 }
@@ -69,7 +68,6 @@
         ColothingViewController *coloth = [[ColothingViewController alloc]initWithNibName:@"ColothingViewController" bundle:nil];
         [self switchRootViewController:coloth];
         [coloth setDelegate:self];
-        
         [self animationMove];
     }else if ([selelctItem isEqualToString:@"环境温湿度"]){
         EnvironViewController *env = [[EnvironViewController alloc]initWithNibName:@"EnvironViewController" bundle:nil];

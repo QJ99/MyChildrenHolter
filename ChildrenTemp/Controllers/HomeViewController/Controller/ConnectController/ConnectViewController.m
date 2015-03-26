@@ -8,7 +8,6 @@
 
 #import "ConnectViewController.h"
 #import "DeviceScanView.h"
-#import "MainViewController.h"
 @interface ConnectViewController ()<deviceDelegate>
 @property (weak, nonatomic) IBOutlet UIView *bottomView;
 @property (weak, nonatomic) IBOutlet UIView *middleView;
@@ -149,8 +148,6 @@
                 }
                     break;
                 case CBPeripheralStateConnected:{
-//                    MainViewController *main = [[MainViewController alloc]initWithNibName:@"MainViewController" bundle:nil];
-//                    [self.navigationController pushViewController:main animated:YES];
                     if ([_connectDelegate respondsToSelector:@selector(connectview:pushController:)]) {
                         [_connectDelegate connectview:self pushController:YES];
                         
