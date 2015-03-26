@@ -18,12 +18,15 @@
     _connectButton.layer.masksToBounds = YES;
     UITableView *myTabelView =  [[UITableView alloc]initWithFrame:CGRectMake(0, 0, self.frame.size.width, 50) style:UITableViewStylePlain];
     [myTabelView setDelegate:self];
+    [myTabelView setDataSource:self];
     [myTabelView setBackgroundView:nil];
     [myTabelView setBackgroundColor:[UIColor clearColor]];
     [myTabelView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
     myTabelView.transform = CGAffineTransformMakeRotation(M_PI/2*3);
     [self addSubview:myTabelView];
     myTabelView.frame = CGRectMake(0, 0,self.frame.size.width, 50);
+    myTabelView.showsHorizontalScrollIndicator = NO;
+    myTabelView.showsVerticalScrollIndicator = NO;
    
 }
 #pragma mark tableviewDatasource
@@ -39,12 +42,13 @@
         cell.backgroundColor = [UIColor clearColor];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
-    cell.calendarDayText.text = @"呵呵";
+    cell.calendarDayText.textColor = [UIColor blackColor];
+    cell.calendarDayText.text = @"呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵";
     return cell;
 }
 #pragma mark tableviewDelegate
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-      return [UIScreen mainScreen].applicationFrame.size.width/7.0;
+      return 50;
 }
 - (IBAction)connectButtonClick:(UIButton *)sender {
 }
